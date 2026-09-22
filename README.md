@@ -53,7 +53,7 @@ Headless e-commerce рушій на Symfony. Надає API для керува�
 | Якість коду | PHPStan (level 8+), PHP-CS-Fixer, Deptrac |
 | Інфраструктура | Docker, Docker Compose, GitHub Actions |
 
-Обґрунтування вибору технологій наведено в технічному завданні проєкту ([docs/Lavka_TZ.md](docs/Lavka_TZ.md), розділ AC-02) та в ADR-документах (`docs/adr/`).
+Обґрунтування вибору технологій наведено в технічному завданні проєкту ([LavkaAC.md](LavkaAC.md), розділ AC-02) та в ADR-документах
 
 ## Системні вимоги
 
