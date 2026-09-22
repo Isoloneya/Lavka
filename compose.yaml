@@ -6,8 +6,8 @@ x-app: &app
     dockerfile: docker/php/Dockerfile
   volumes:
     - .:/app
-    # var/ (кеш Symfony) у named volume: на Windows це помітно швидше за bind mount
     - var_data:/app/var
+    - vendor_data:/app/vendor
   environment:
     APP_ENV: dev
     DATABASE_URL: "postgresql://app:app@database:5432/lavka?serverVersion=16&charset=utf8"
@@ -25,9 +25,6 @@ services:
     ports:
       - "8080:80"
 
-  # Воркер черг і планувальника. Поки Messenger не налаштований, запускається окремо:
-  #   docker compose --profile worker up -d
-  # Коли Messenger буде готовий, рядок `profiles` можна видалити.
   worker:
     <<: *app
     profiles: ["worker"]
@@ -56,3 +53,4 @@ services:
 volumes:
   db_data:
   var_data:
+  vendor_data:
