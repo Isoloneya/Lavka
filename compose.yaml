@@ -1,0 +1,58 @@
+name: lavka
+
+x-app: &app
+  build:
+    context: .
+    dockerfile: docker/php/Dockerfile
+  volumes:
+    - .:/app
+    # var/ (кеш Symfony) у named volume: на Windows це помітно швидше за bind mount
+    - var_data:/app/var
+  environment:
+    APP_ENV: dev
+    DATABASE_URL: "postgresql://app:app@database:5432/lavka?serverVersion=16&charset=utf8"
+    REDIS_URL: "redis://redis:6379"
+    MESSENGER_TRANSPORT_DSN: "redis://redis:6379/messages"
+  depends_on:
+    database:
+      condition: service_healthy
+    redis:
+      condition: service_started
+
+services:
+  app:
+    <<: *app
+    ports:
+      - "8080:80"
+
+  # Воркер черг і планувальника. Поки Messenger не налаштований, запускається окремо:
+  #   docker compose --profile worker up -d
+  # Коли Messenger буде готовий, рядок `profiles` можна видалити.
+  worker:
+    <<: *app
+    profiles: ["worker"]
+    command: php bin/console messenger:consume async scheduler_default -vv
+    restart: unless-stopped
+
+  database:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_DB: lavka
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: app
+    ports:
+      - "5433:5432"
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U app -d lavka"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  redis:
+    image: redis:7-alpine
+
+volumes:
+  db_data:
+  var_data:
