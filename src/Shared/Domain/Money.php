@@ -7,16 +7,8 @@ namespace App\Shared\Domain;
 use App\Shared\Domain\Exception\CurrencyMismatch;
 use App\Shared\Domain\Exception\InvalidMoney;
 
-/**
- * Сума в мінімальних одиницях валюти (наприклад, копійки) + код валюти ISO 4217.
- *
- * Незмінний value object без float-арифметики. Від'ємні суми не допускаються:
- * знижка не може «перевищити» ціну, а результат віднімання нижче нуля є помилкою.
- * Усі операції перевіряють переповнення цілого числа.
- */
 final readonly class Money
 {
-    /** 100% у базисних пунктах (1 б.п. = 0,01%). */
     public const MAX_BASIS_POINTS = 10_000;
 
     private function __construct(
@@ -67,9 +59,6 @@ final readonly class Money
         return new self($result, $this->currency);
     }
 
-    /**
-     * Множення на цілу кількість (наприклад, ціна за одиницю × кількість).
-     */
     public function multiply(int $factor): self
     {
         if ($factor < 0) {
@@ -83,10 +72,6 @@ final readonly class Money
         return new self($this->amount * $factor, $this->currency);
     }
 
-    /**
-     * Відсоток від суми в базисних пунктах: 1000 б.п. = 10%, 1250 б.п. = 12,5%.
-     * Округлення до найближчої мінімальної одиниці, половина округлюється вгору.
-     */
     public function percentage(int $basisPoints): self
     {
         if ($basisPoints < 0 || $basisPoints > self::MAX_BASIS_POINTS) {
@@ -126,9 +111,6 @@ final readonly class Money
         return $this->amount < $other->amount;
     }
 
-    /**
-     * Менша з двох сум (зручно для обмеження знижки ціною позиції).
-     */
     public function min(self $other): self
     {
         return $other->isLessThan($this) ? $other : $this;
