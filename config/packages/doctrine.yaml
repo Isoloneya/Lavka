@@ -24,6 +24,12 @@ doctrine:
                 dir: '%kernel.project_dir%/src/Entity'
                 prefix: 'App\Entity'
                 alias: App
+            Catalog:
+                type: xml
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/Catalog/Infrastructure/Doctrine'
+                prefix: 'App\Catalog\Domain'
+                alias: Catalog
         controller_resolver:
             auto_mapping: false
 
