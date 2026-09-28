@@ -22,7 +22,10 @@ final class StockReservationTest extends KernelTestCase
     {
         self::bootKernel();
 
-        $this->entityManager = self::getContainer()->get(EntityManagerInterface::class);
+        $entityManager = self::getContainer()->get(EntityManagerInterface::class);
+        assert($entityManager instanceof EntityManagerInterface);
+
+        $this->entityManager = $entityManager;
         $this->repository = new DoctrineStockRepository($this->entityManager);
 
         $schemaTool = new SchemaTool($this->entityManager);
