@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace App\Tests\Integration\Inventory;
 
 use App\Inventory\Domain\Exception\InsufficientStock;
+use App\Inventory\Domain\Exception\InvalidStockItem;
 use App\Inventory\Domain\StockItem;
 use App\Inventory\Domain\StockRepository;
 use App\Inventory\Infrastructure\Doctrine\DoctrineStockRepository;
 use Doctrine\ORM\EntityManagerInterface;
-use Doctrine\ORM\Tools\SchemaTool;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\Uid\Uuid;
 
@@ -28,14 +28,16 @@ final class StockReservationTest extends KernelTestCase
         $this->entityManager = $entityManager;
         $this->repository = new DoctrineStockRepository($this->entityManager);
 
-        $schemaTool = new SchemaTool($this->entityManager);
-        $schemaTool->createSchema([$this->entityManager->getClassMetadata(StockItem::class)]);
+        $this->entityManager->getConnection()->beginTransaction();
     }
 
     protected function tearDown(): void
     {
-        $schemaTool = new SchemaTool($this->entityManager);
-        $schemaTool->dropSchema([$this->entityManager->getClassMetadata(StockItem::class)]);
+        $connection = $this->entityManager->getConnection();
+
+        if ($connection->isTransactionActive()) {
+            $connection->rollBack();
+        }
 
         $this->entityManager->close();
 
@@ -44,7 +46,7 @@ final class StockReservationTest extends KernelTestCase
 
     public function testReservesWithinAvailableQuantity(): void
     {
-        $variantId = Uuid::v7();
+        $variantId = $this->createVariant();
         $warehouseId = Uuid::v7();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 10));
@@ -62,7 +64,7 @@ final class StockReservationTest extends KernelTestCase
 
     public function testThrowsWhenRequestedQuantityExceedsAvailable(): void
     {
-        $variantId = Uuid::v7();
+        $variantId = $this->createVariant();
         $warehouseId = Uuid::v7();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 5));
@@ -75,7 +77,7 @@ final class StockReservationTest extends KernelTestCase
 
     public function testFailedReservationDoesNotChangeReservedQuantity(): void
     {
-        $variantId = Uuid::v7();
+        $variantId = $this->createVariant();
         $warehouseId = Uuid::v7();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 5));
@@ -94,7 +96,7 @@ final class StockReservationTest extends KernelTestCase
 
     public function testSequentialReservationsNeverExceedAvailableQuantity(): void
     {
-        $variantId = Uuid::v7();
+        $variantId = $this->createVariant();
         $warehouseId = Uuid::v7();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 5));
@@ -115,5 +117,65 @@ final class StockReservationTest extends KernelTestCase
         self::assertNotNull($stored);
         self::assertSame(1, $succeeded);
         self::assertLessThanOrEqual(5, $stored->reserved());
+    }
+
+    public function testRejectsNonPositiveReservationsWithoutChangingStock(): void
+    {
+        $variantId = $this->createVariant();
+        $warehouseId = Uuid::v7();
+        $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 10));
+        $this->repository->reserve($variantId, $warehouseId, 3);
+
+        foreach ([0, -1, -4] as $quantity) {
+            try {
+                $this->repository->reserve($variantId, $warehouseId, $quantity);
+                self::fail('Очікувався виняток InvalidStockItem.');
+            } catch (InvalidStockItem $exception) {
+                self::assertSame('INVALID_STOCK_ITEM', $exception->errorCode());
+            }
+
+            $this->entityManager->clear();
+            $stored = $this->repository->find($variantId, $warehouseId);
+            self::assertNotNull($stored);
+            self::assertSame(10, $stored->quantity());
+            self::assertSame(3, $stored->reserved());
+        }
+    }
+
+    private function createVariant(): Uuid
+    {
+        $connection = $this->entityManager->getConnection();
+        $categoryId = Uuid::v7();
+        $productId = Uuid::v7();
+        $variantId = Uuid::v7();
+
+        $connection->insert('category', [
+            'id' => $categoryId->toRfc4122(),
+            'parent_id' => null,
+            'slug' => 'category-'.$categoryId->toRfc4122(),
+            'name' => 'Тестова категорія',
+            'attribute_schema' => '{}',
+            'is_active' => 1,
+        ]);
+
+        $connection->insert('product', [
+            'id' => $productId->toRfc4122(),
+            'category_id' => $categoryId->toRfc4122(),
+            'slug' => 'product-'.$productId->toRfc4122(),
+            'name' => 'Тестовий товар',
+            'description' => null,
+            'attributes' => '{}',
+            'status' => 'active',
+        ]);
+
+        $connection->insert('product_variant', [
+            'id' => $variantId->toRfc4122(),
+            'product_id' => $productId->toRfc4122(),
+            'sku' => 'SKU-'.$variantId->toRfc4122(),
+            'options' => '{}',
+            'is_active' => 1,
+        ]);
+
+        return $variantId;
     }
 }

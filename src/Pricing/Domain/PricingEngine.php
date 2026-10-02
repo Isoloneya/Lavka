@@ -21,14 +21,12 @@ final class PricingEngine
         $cartRules = $this->sortByPriority($this->filterByScope($rules, RuleScope::Cart));
 
         foreach ($context->lines as $line) {
-            $lineDiscount = $this->processScope($itemRules, $context, $line, $applied, $skipped);
-            $lineDiscount = $lineDiscount->min($line->subtotal());
+            $lineDiscount = $this->processScope($itemRules, $context, $line, $line->subtotal(), $applied, $skipped);
             $totalDiscount = $totalDiscount->add($lineDiscount);
         }
 
         $remaining = $context->subtotal()->subtract($totalDiscount);
-        $cartDiscount = $this->processScope($cartRules, $context, null, $applied, $skipped);
-        $cartDiscount = $cartDiscount->min($remaining);
+        $cartDiscount = $this->processScope($cartRules, $context, null, $remaining, $applied, $skipped);
         $totalDiscount = $totalDiscount->add($cartDiscount);
 
         $subtotal = $context->subtotal();
@@ -46,6 +44,7 @@ final class PricingEngine
         array $rules,
         PricingContext $context,
         ?PricingLine $line,
+        Money $budget,
         array &$applied,
         array &$skipped,
     ): Money {
@@ -68,7 +67,8 @@ final class PricingEngine
             $ruleDiscount = Money::zero($context->currency);
 
             foreach ($rule->actions as $action) {
-                $ruleDiscount = $ruleDiscount->add($action->apply($context, $line));
+                $remaining = $budget->subtract($scopeDiscount)->subtract($ruleDiscount);
+                $ruleDiscount = $ruleDiscount->add($action->apply($context, $line)->min($remaining));
             }
 
             $applied[] = new AppliedRule($rule->id, $rule->name, $rule->scope, $ruleDiscount);

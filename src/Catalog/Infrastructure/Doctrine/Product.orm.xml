@@ -12,7 +12,11 @@
         <field name="slug" type="string" column="slug" length="255" unique="true"/>
         <field name="name" type="string" column="name" length="255"/>
         <field name="description" type="text" column="description" nullable="true"/>
-        <field name="attributes" type="json" column="attributes"/>
+        <field name="attributes" type="json" column="attributes">
+            <options>
+                <option name="jsonb">true</option>
+            </options>
+        </field>
         <field name="status" type="string" column="status" length="20" enum-type="App\Catalog\Domain\ProductStatus"/>
         <indexes>
             <index columns="category_id"/>

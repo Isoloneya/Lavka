@@ -10,7 +10,11 @@
         </id>
         <field name="productId" type="uuid" column="product_id"/>
         <field name="sku" type="string" column="sku" length="64" unique="true"/>
-        <field name="options" type="json" column="options"/>
+        <field name="options" type="json" column="options">
+            <options>
+                <option name="jsonb">true</option>
+            </options>
+        </field>
         <field name="isActive" type="boolean" column="is_active"/>
         <indexes>
             <index columns="product_id"/>

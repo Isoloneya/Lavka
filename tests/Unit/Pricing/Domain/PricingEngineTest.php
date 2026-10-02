@@ -185,6 +185,66 @@ final class PricingEngineTest extends TestCase
         self::assertSame(10_000, $result->discount->amount);
         self::assertSame(0, $result->total->amount);
         self::assertCount(2, $result->appliedRules);
+        self::assertSame(10_000, $result->appliedRules[0]->discount->amount);
+        self::assertSame(0, $result->appliedRules[1]->discount->amount);
+    }
+
+    public function testExplainCapsEachItemRuleToRemainingLineSubtotal(): void
+    {
+        $context = new PricingContext('UAH', [
+            new PricingLine('SHOE-42', 'shoes', Money::of(10_000, 'UAH'), 1),
+            new PricingLine('BAG-01', 'bags', Money::of(20_000, 'UAH'), 1),
+        ]);
+        $rules = [
+            new Rule('second', 'Second', RuleScope::Item, 100, false, [new CategoryIn(['shoes'])], [new PercentageDiscount(7_000)]),
+            new Rule('first', 'First', RuleScope::Item, 200, false, [new CategoryIn(['shoes'])], [new PercentageDiscount(7_000)]),
+        ];
+
+        $result = $this->engine->calculate($context, $rules);
+
+        self::assertSame(10_000, $result->discount->amount);
+        self::assertSame(20_000, $result->total->amount);
+        self::assertCount(2, $result->appliedRules);
+        self::assertSame('first', $result->appliedRules[0]->ruleId);
+        self::assertSame(7_000, $result->appliedRules[0]->discount->amount);
+        self::assertSame(3_000, $result->appliedRules[1]->discount->amount);
+    }
+
+    public function testExplainCapsCartRulesAfterItemDiscounts(): void
+    {
+        $context = new PricingContext('UAH', [
+            new PricingLine('SHOE-42', 'shoes', Money::of(10_000, 'UAH'), 1),
+        ]);
+        $rules = [
+            new Rule('item', 'Item', RuleScope::Item, 100, false, [], [new PercentageDiscount(2_000)]),
+            new Rule('cart-first', 'Cart first', RuleScope::Cart, 200, false, [], [new PercentageDiscount(6_000)]),
+            new Rule('cart-second', 'Cart second', RuleScope::Cart, 100, false, [], [new PercentageDiscount(6_000)]),
+        ];
+
+        $result = $this->engine->calculate($context, $rules);
+
+        self::assertSame(10_000, $result->discount->amount);
+        self::assertSame(0, $result->total->amount);
+        self::assertCount(3, $result->appliedRules);
+        self::assertSame(2_000, $result->appliedRules[0]->discount->amount);
+        self::assertSame(6_000, $result->appliedRules[1]->discount->amount);
+        self::assertSame(2_000, $result->appliedRules[2]->discount->amount);
+    }
+
+    public function testMultipleActionsCannotOverflowDiscountBudget(): void
+    {
+        $amount = intdiv(PHP_INT_MAX - 5_000, 10_000);
+        $context = new PricingContext('UAH', [
+            new PricingLine('SHOE-42', 'shoes', Money::of($amount, 'UAH'), 1),
+        ]);
+        $rule = new Rule('multi', 'Multiple actions', RuleScope::Item, 100, false, [], array_fill(0, 10_002, new PercentageDiscount(10_000)));
+
+        $result = $this->engine->calculate($context, [$rule]);
+
+        self::assertSame($amount, $result->discount->amount);
+        self::assertSame(0, $result->total->amount);
+        self::assertCount(1, $result->appliedRules);
+        self::assertSame($amount, $result->appliedRules[0]->discount->amount);
     }
 
     public function testEmptyRuleListReturnsSubtotalAsTotal(): void

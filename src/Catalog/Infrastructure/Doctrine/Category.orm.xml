@@ -11,7 +11,11 @@
         <field name="parentId" type="uuid" column="parent_id" nullable="true"/>
         <field name="slug" type="string" column="slug" length="255" unique="true"/>
         <field name="name" type="string" column="name" length="255"/>
-        <field name="attributeSchema" type="json" column="attribute_schema"/>
+        <field name="attributeSchema" type="json" column="attribute_schema">
+            <options>
+                <option name="jsonb">true</option>
+            </options>
+        </field>
         <field name="isActive" type="boolean" column="is_active"/>
         <indexes>
             <index columns="parent_id"/>
