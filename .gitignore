@@ -1,15 +1,12 @@
-
 /vendor/
 /var/
 /public/bundles/
 node_modules/
 
-.env
 .env.local
 .env.local.php
 .env.*.local
-.env.dev
-.env.test
+
 /config/jwt/*.pem
 /config/secrets/prod/prod.decrypt.private.php
 
@@ -17,7 +14,6 @@ node_modules/
 /phpunit.xml
 /.php-cs-fixer.cache
 /.php-cs-fixer.php
-phpstan.neon
 
 .idea/
 .vscode/

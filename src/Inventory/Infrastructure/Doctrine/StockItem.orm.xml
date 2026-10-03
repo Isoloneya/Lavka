@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                   https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="App\Inventory\Domain\StockItem" table="stock_item">
+        <id name="id" type="uuid" column="id">
+            <generator strategy="NONE"/>
+        </id>
+        <field name="variantId" type="uuid" column="variant_id"/>
+        <field name="warehouseId" type="uuid" column="warehouse_id"/>
+        <field name="quantity" type="integer" column="quantity"/>
+        <field name="reserved" type="integer" column="reserved"/>
+        <unique-constraints>
+            <unique-constraint columns="variant_id,warehouse_id" name="uniq_stock_item_variant_warehouse"/>
+        </unique-constraints>
+    </entity>
+</doctrine-mapping>
