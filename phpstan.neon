@@ -5,5 +5,9 @@ parameters:
         - tests
     ignoreErrors:
         -
+            identifier: missingType.iterableValue
+            path: src/Identity/Infrastructure/Security/StaffVoter.php
+            count: 1
+        -
             identifier: function.alreadyNarrowedType
             path: tests/bootstrap.php

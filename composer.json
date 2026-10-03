@@ -6,7 +6,7 @@
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
-        "php": ">=8.2",
+        "php": ">=8.3",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "api-platform/doctrine-orm": "^5.0",
@@ -18,6 +18,7 @@
         "lexik/jwt-authentication-bundle": "^3.2",
         "nelmio/cors-bundle": "^2.6",
         "opis/json-schema": "^2.6",
+        "symfony/asset": "7.4.*",
         "symfony/console": "7.4.*",
         "symfony/dotenv": "7.4.*",
         "symfony/flex": "^2",
@@ -30,6 +31,7 @@
         "symfony/runtime": "7.4.*",
         "symfony/scheduler": "7.4.*",
         "symfony/security-bundle": "7.4.*",
+        "symfony/twig-bundle": "7.4.*",
         "symfony/uid": "7.4.*",
         "symfony/validator": "7.4.*",
         "symfony/workflow": "7.4.*",
@@ -68,6 +70,7 @@
         "test": "phpunit",
         "stan": "phpstan analyse",
         "cs": "php-cs-fixer fix --dry-run --diff",
+        "cs:fix": "php-cs-fixer fix",
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
             "assets:install %PUBLIC_DIR%": "symfony-cmd"

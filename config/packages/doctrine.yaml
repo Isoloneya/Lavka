@@ -13,6 +13,11 @@ doctrine:
             Doctrine\DBAL\Platforms\PostgreSQLPlatform: identity
         auto_mapping: true
         mappings:
+            Identity:
+                type: attribute
+                is_bundle: false
+                dir: '%kernel.project_dir%/src/Identity/Infrastructure/Security'
+                prefix: 'App\Identity\Infrastructure\Security'
             App:
                 type: attribute
                 is_bundle: false

@@ -4,11 +4,14 @@ declare(strict_types=1);
 
 namespace App\Tests\Integration\Inventory;
 
+use App\Inventory\Application\ReserveStock;
 use App\Inventory\Domain\Exception\InsufficientStock;
 use App\Inventory\Domain\Exception\InvalidStockItem;
 use App\Inventory\Domain\StockItem;
 use App\Inventory\Domain\StockRepository;
 use App\Inventory\Infrastructure\Doctrine\DoctrineStockRepository;
+use Doctrine\DBAL\Exception\DriverException;
+use Doctrine\DBAL\Exception\ForeignKeyConstraintViolationException;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\Uid\Uuid;
@@ -47,7 +50,7 @@ final class StockReservationTest extends KernelTestCase
     public function testReservesWithinAvailableQuantity(): void
     {
         $variantId = $this->createVariant();
-        $warehouseId = Uuid::v7();
+        $warehouseId = $this->createWarehouse();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 10));
         $this->entityManager->clear();
@@ -65,7 +68,7 @@ final class StockReservationTest extends KernelTestCase
     public function testThrowsWhenRequestedQuantityExceedsAvailable(): void
     {
         $variantId = $this->createVariant();
-        $warehouseId = Uuid::v7();
+        $warehouseId = $this->createWarehouse();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 5));
         $this->entityManager->clear();
@@ -78,7 +81,7 @@ final class StockReservationTest extends KernelTestCase
     public function testFailedReservationDoesNotChangeReservedQuantity(): void
     {
         $variantId = $this->createVariant();
-        $warehouseId = Uuid::v7();
+        $warehouseId = $this->createWarehouse();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 5));
         $this->entityManager->clear();
@@ -97,7 +100,7 @@ final class StockReservationTest extends KernelTestCase
     public function testSequentialReservationsNeverExceedAvailableQuantity(): void
     {
         $variantId = $this->createVariant();
-        $warehouseId = Uuid::v7();
+        $warehouseId = $this->createWarehouse();
 
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 5));
         $this->entityManager->clear();
@@ -122,7 +125,7 @@ final class StockReservationTest extends KernelTestCase
     public function testRejectsNonPositiveReservationsWithoutChangingStock(): void
     {
         $variantId = $this->createVariant();
-        $warehouseId = Uuid::v7();
+        $warehouseId = $this->createWarehouse();
         $this->repository->save(StockItem::create(Uuid::v7(), $variantId, $warehouseId, 10));
         $this->repository->reserve($variantId, $warehouseId, 3);
 
@@ -177,5 +180,86 @@ final class StockReservationTest extends KernelTestCase
         ]);
 
         return $variantId;
+    }
+
+    public function testDatabaseRejectsNegativeQuantity(): void
+    {
+        $this->assertStockConstraintViolation(-1, 0, 'chk_stock_item_quantity_non_negative');
+    }
+
+    public function testReservationBatchRollsBackWhenOneLineFails(): void
+    {
+        $variant = $this->createVariant();
+        $warehouse = $this->createWarehouse();
+        $this->repository->save(StockItem::create(Uuid::v7(), $variant, $warehouse, 5));
+        $reserve = new ReserveStock($this->repository, $this->entityManager->getConnection());
+        try {
+            $reserve([
+                ['variantId' => $variant, 'warehouseId' => $warehouse, 'quantity' => 3],
+                ['variantId' => $variant, 'warehouseId' => $warehouse, 'quantity' => 3],
+            ]);
+            self::fail('Очікувався недостатній залишок.');
+        } catch (InsufficientStock) {
+            $this->entityManager->clear();
+            $stock = $this->repository->find($variant, $warehouse);
+            self::assertNotNull($stock);
+            self::assertSame(0, $stock->reserved());
+        }
+    }
+
+    public function testDatabaseRejectsNegativeReservedQuantity(): void
+    {
+        $this->assertStockConstraintViolation(10, -1, 'chk_stock_item_reserved_non_negative');
+    }
+
+    public function testDatabaseRejectsReservedQuantityAboveStock(): void
+    {
+        $this->assertStockConstraintViolation(10, 11, 'chk_stock_item_reserved_within_quantity');
+    }
+
+    public function testDatabaseRejectsMissingVariant(): void
+    {
+        $warehouse = $this->createWarehouse();
+        $this->expectException(ForeignKeyConstraintViolationException::class);
+        $this->entityManager->getConnection()->insert('stock_item', [
+            'id' => Uuid::v7()->toRfc4122(),
+            'variant_id' => Uuid::v7()->toRfc4122(),
+            'warehouse_id' => $warehouse->toRfc4122(),
+            'quantity' => 10,
+            'reserved' => 0,
+        ]);
+    }
+
+    private function assertStockConstraintViolation(int $quantity, int $reserved, string $constraint): void
+    {
+        $variant = $this->createVariant();
+        $warehouse = $this->createWarehouse();
+        try {
+            $this->entityManager->getConnection()->insert('stock_item', [
+                'id' => Uuid::v7()->toRfc4122(),
+                'variant_id' => $variant->toRfc4122(),
+                'warehouse_id' => $warehouse->toRfc4122(),
+                'quantity' => $quantity,
+                'reserved' => $reserved,
+            ]);
+        } catch (DriverException $exception) {
+            self::assertSame('23514', $exception->getSQLState());
+            self::assertStringContainsString($constraint, $exception->getMessage());
+
+            return;
+        }
+        self::fail('База даних не відхилила порушення '.$constraint);
+    }
+
+    private function createWarehouse(): Uuid
+    {
+        $id = Uuid::v7();
+        $this->entityManager->getConnection()->insert('warehouse', [
+            'id' => $id->toRfc4122(),
+            'code' => 'warehouse-'.$id->toRfc4122(),
+            'name' => 'Тестовий склад',
+        ]);
+
+        return $id;
     }
 }

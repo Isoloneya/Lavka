@@ -106,7 +106,7 @@ final class Category
 
     private static function guardSlug(string $slug): void
     {
-        if (1 !== preg_match('/^[a-z0-9]+(-[a-z0-9]+)*$/', $slug)) {
+        if (strlen($slug) > 100 || 1 !== preg_match('/^[a-z0-9]+(-[a-z0-9]+)*$/', $slug)) {
             throw InvalidCategory::invalidSlug($slug);
         }
     }
