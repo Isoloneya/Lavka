@@ -7,8 +7,10 @@ namespace App\Catalog\Domain;
 use App\Catalog\Domain\Exception\InvalidProduct;
 use Symfony\Component\Uid\Uuid;
 
-final class Product
+class Product
 {
+    private readonly \DateTimeImmutable $createdAt;
+
     /**
      * @param array<string, mixed> $attributes
      */
@@ -21,6 +23,7 @@ final class Product
         private array $attributes,
         private ProductStatus $status,
     ) {
+        $this->createdAt = new \DateTimeImmutable();
     }
 
     /**
@@ -78,6 +81,11 @@ final class Product
         return $this->status;
     }
 
+    public function createdAt(): \DateTimeImmutable
+    {
+        return $this->createdAt;
+    }
+
     public function rename(string $name): void
     {
         self::guardName($name);
@@ -121,7 +129,7 @@ final class Product
 
     private static function guardSlug(string $slug): void
     {
-        if (1 !== preg_match('/^[a-z0-9]+(-[a-z0-9]+)*$/', $slug)) {
+        if (strlen($slug) > 100 || 1 !== preg_match('/^[a-z0-9]+(-[a-z0-9]+)*$/', $slug)) {
             throw InvalidProduct::invalidSlug($slug);
         }
     }

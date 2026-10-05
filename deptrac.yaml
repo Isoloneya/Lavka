@@ -1,0 +1,38 @@
+deptrac:
+    paths:
+        - ./src
+    layers:
+        - name: Domain
+          collectors:
+              - { type: classLike, value: '^App\\.*\\Domain\\' }
+        - name: Application
+          collectors:
+              - { type: classLike, value: '^App\\.*\\Application\\' }
+        - name: Api
+          collectors:
+              - { type: classLike, value: '^App\\.*\\Api\\' }
+        - name: Infrastructure
+          collectors:
+              - { type: classLike, value: '^App\\.*\\Infrastructure\\' }
+        - name: Bootstrap
+          collectors:
+              - { type: classLike, value: '^App\\(Kernel|Schedule|DataFixtures\\.*)$' }
+        - name: Uid
+          collectors:
+              - { type: classLike, value: '^Symfony\\Component\\Uid\\' }
+        - name: Framework
+          collectors:
+              - { type: classLike, value: '^(Symfony\\(?!Component\\Uid\\)|Doctrine\\)' }
+        - name: External
+          collectors:
+              - { type: classLike, value: '^(?!App\\|Symfony\\|Doctrine\\).+' }
+    ruleset:
+        Domain: [Uid, External]
+        Application: [Domain, Framework, Uid, External]
+        Api: [Application, Domain, Infrastructure, Framework, Uid, External]
+        Infrastructure: [Domain, Application, Framework, Uid, External]
+        Bootstrap: [Infrastructure, Framework, External]
+    skip_violations:
+        App\Identity\Application\RegisterUser:
+            - App\Identity\Infrastructure\Security\User
+            - App\Identity\Infrastructure\Persistence\UserRepository

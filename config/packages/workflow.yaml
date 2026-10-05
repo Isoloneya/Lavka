@@ -1,2 +1,27 @@
 framework:
-    workflows: null
+    workflows:
+        order:
+            type: state_machine
+            marking_store:
+                type: method
+                property: status
+            supports:
+                - App\Order\Domain\OrderState
+            initial_marking: pending_payment
+            places: [pending_payment, paid, processing, shipped, completed, cancelled]
+            transitions:
+                pay:
+                    from: pending_payment
+                    to: paid
+                start_processing:
+                    from: paid
+                    to: processing
+                ship:
+                    from: processing
+                    to: shipped
+                complete:
+                    from: shipped
+                    to: completed
+                cancel:
+                    from: [pending_payment, paid, processing]
+                    to: cancelled

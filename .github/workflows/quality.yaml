@@ -1,0 +1,57 @@
+name: Quality
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start services
+        run: docker compose up -d --build
+      - name: Install dependencies
+        run: docker compose exec -T app composer install --no-interaction --prefer-dist
+      - name: Generate test keys
+        run: docker compose exec -T app php bin/console lexik:jwt:generate-keypair --skip-if-exists
+      - name: Prepare test database
+        run: |
+          docker compose exec -T app php bin/console doctrine:database:create --env=test --if-not-exists
+          docker compose exec -T app php bin/console doctrine:migrations:migrate --env=test --no-interaction
+      - name: Validate schema
+        run: docker compose exec -T app php bin/console doctrine:schema:validate --env=test
+      - name: Tests
+        run: docker compose exec -T app composer test
+      - name: Static analysis
+        run: docker compose exec -T app composer stan
+      - name: Code style
+        run: docker compose exec -T app composer cs
+      - name: Dependency metadata
+        run: docker compose exec -T app composer validate --strict
+      - name: Architecture
+        run: docker compose exec -T app composer deptrac
+      - name: Pricing mutation tests
+        run: docker compose exec -T app composer infection
+      - name: Build production image
+        run: docker build -f docker/php/Dockerfile.prod -t lavka:production .
+      - name: Production smoke checks
+        run: |
+          docker run -d --name lavka-production-smoke --network lavka_default --cap-drop ALL --cap-add NET_BIND_SERVICE -e SERVER_NAME=http://:80 -e APP_SECRET=ci-smoke-test-only -e DATABASE_URL=postgresql://app:app@database:5432/lavka_test?serverVersion=16.0.0 -e REDIS_URL=redis://redis:6379 -e MESSENGER_TRANSPORT_DSN=redis://redis:6379/smoke-messages -e MESSENGER_CONSUMER_NAME=smoke-worker lavka:production
+          docker exec lavka-production-smoke php bin/console lexik:jwt:generate-keypair --skip-if-exists --no-interaction
+          docker exec lavka-production-smoke curl --retry 10 --retry-connrefused --retry-delay 1 -fsS http://localhost:8081/health
+          docker compose exec -T app php tests/Support/production-smoke.php
+          docker exec lavka-production-smoke php bin/console messenger:consume async scheduler_default --time-limit=3 --no-interaction
+      - name: Remove smoke container
+        if: always()
+        run: docker rm -f lavka-production-smoke || true
+      - name: Service logs
+        if: failure()
+        run: docker compose logs --no-color
+      - name: Stop services
+        if: always()
+        run: docker compose down

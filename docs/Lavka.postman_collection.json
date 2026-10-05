@@ -1,0 +1,1014 @@
+{
+  "info": {
+    "name": "Lavka Engine — API and checkout",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Створіть персонал через app:create-staff. Заповніть staff_email і staff_password. Запити створення зберігають UUID у змінні колекції."
+  },
+  "variable": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080"
+    },
+    {
+      "key": "staff_email",
+      "value": ""
+    },
+    {
+      "key": "staff_password",
+      "value": ""
+    },
+    {
+      "key": "token",
+      "value": ""
+    },
+    {
+      "key": "category_id",
+      "value": ""
+    },
+    {
+      "key": "product_id",
+      "value": ""
+    },
+    {
+      "key": "variant_id",
+      "value": ""
+    },
+    {
+      "key": "price_list_id",
+      "value": ""
+    },
+    {
+      "key": "warehouse_id",
+      "value": ""
+    },
+    {
+      "key": "rule_id",
+      "value": ""
+    },
+    {
+      "key": "user_id",
+      "value": ""
+    },
+    {
+      "key": "cart_token",
+      "value": ""
+    },
+    {
+      "key": "order_number",
+      "value": ""
+    },
+    {
+      "key": "checkout_key",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "POST /api/v1/auth/register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/auth/register",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"buyer@example.com\",\n  \"password\": \"Secure-pass-123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"user_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/auth/login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/auth/login",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"{{staff_email}}\",\n  \"password\": \"{{staff_password}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 200) {",
+              "    pm.collectionVariables.set(\"token\", pm.response.json().token);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/admin/categories",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/categories",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"slug\": \"shoes\",\n  \"name\": \"Взуття\",\n  \"attribute_schema\": {\n    \"type\": \"object\",\n    \"properties\": {\n      \"size\": {\n        \"type\": \"integer\"\n      }\n    },\n    \"required\": [\n      \"size\"\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"category_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/admin/products",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/products",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"category_id\": \"{{category_id}}\",\n  \"slug\": \"shoes-black\",\n  \"name\": \"Чорні кросівки\",\n  \"attributes\": {\n    \"size\": 42\n  },\n  \"status\": \"active\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"product_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/admin/products/{productId}/variants",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/products/{{product_id}}/variants",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"sku\": \"SHOE-42-BLK\",\n  \"options\": {\n    \"color\": \"black\",\n    \"size\": 42\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"variant_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/admin/price-lists",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/price-lists",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"retail-uah\",\n  \"currency\": \"UAH\",\n  \"priority\": 0\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"price_list_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "PUT /api/v1/admin/price-lists/{id}/prices",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/price-lists/{{price_list_id}}/prices",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"prices\": [\n    {\n      \"variant_id\": \"{{variant_id}}\",\n      \"amount_minor\": 100000,\n      \"min_quantity\": 1\n    },\n    {\n      \"variant_id\": \"{{variant_id}}\",\n      \"amount_minor\": 90000,\n      \"min_quantity\": 3\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/promotion-rules",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/promotion-rules",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"10% на взуття\",\n  \"scope\": \"item\",\n  \"priority\": 100,\n  \"stop_processing\": false,\n  \"conditions\": {\n    \"all\": [\n      {\n        \"field\": \"item.category\",\n        \"op\": \"in\",\n        \"value\": [\n          \"shoes\"\n        ]\n      }\n    ]\n  },\n  \"actions\": [\n    {\n      \"type\": \"percent_discount\",\n      \"target\": \"item\",\n      \"value\": 10\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"rule_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/pricing/calculate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/pricing/calculate",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"currency\": \"UAH\",\n  \"items\": [\n    {\n      \"sku\": \"SHOE-42-BLK\",\n      \"quantity\": 3\n    }\n  ]\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/promotion-rules/preview",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/promotion-rules/preview",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"currency\": \"UAH\",\n  \"items\": [\n    {\n      \"sku\": \"SHOE-42-BLK\",\n      \"quantity\": 3\n    }\n  ],\n  \"rule\": {\n    \"name\": \"Preview 10%\",\n    \"scope\": \"item\",\n    \"priority\": 100,\n    \"conditions\": {\n      \"all\": []\n    },\n    \"actions\": [\n      {\n        \"type\": \"percent_discount\",\n        \"target\": \"item\",\n        \"value\": 10\n      }\n    ]\n  }\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "POST /api/v1/admin/warehouses",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/warehouses",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"main\",\n  \"name\": \"Основний склад\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "if (pm.response.code === 201) {",
+              "    pm.collectionVariables.set(\"warehouse_id\", pm.response.json().id);",
+              "}"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "POST /api/v1/admin/customer-groups",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/customer-groups",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"code\": \"wholesale\",\n  \"name\": \"Гуртові покупці\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/stock/{variantId}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/stock/{{variant_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"warehouse_id\": \"{{warehouse_id}}\",\n  \"delta\": 10\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Purchase with stub payment",
+      "item": [
+        {
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "const data = pm.response.json(); pm.collectionVariables.set(\"cart_token\", data.token); pm.collectionVariables.set(\"checkout_key\", pm.variables.replaceIn(\"{{$guid}}\"));"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "name": "Create purchase cart",
+          "request": {
+            "url": "{{base_url}}/api/v1/carts",
+            "body": {
+              "raw": "{\r\n  \"currency\": \"UAH\"\r\n}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Add cart item",
+          "request": {
+            "url": "{{base_url}}/api/v1/carts/{{cart_token}}/items",
+            "body": {
+              "raw": "{\r\n  \"quantity\": 1,\r\n  \"sku\": \"SHOE-42-BLK\"\r\n}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.collectionVariables.set(\"order_number\", pm.response.json().number);"
+                ],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "name": "Checkout",
+          "request": {
+            "url": "{{base_url}}/api/v1/checkout",
+            "body": {
+              "raw": "{\r\n  \"email\": \"buyer@example.com\",\r\n  \"shipping_method\": \"pickup\",\r\n  \"shipping_address\": {\r\n    \"country\": \"UA\",\r\n    \"city\": \"Київ\",\r\n    \"address\": \"Хрещатик 1\",\r\n    \"recipient\": \"Покупець\",\r\n    \"phone\": \"+380501234567\"\r\n  }\r\n}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Repeat checkout safely",
+          "request": {
+            "url": "{{base_url}}/api/v1/checkout",
+            "body": {
+              "raw": "{\r\n  \"email\": \"buyer@example.com\",\r\n  \"shipping_method\": \"pickup\",\r\n  \"shipping_address\": {\r\n    \"country\": \"UA\",\r\n    \"city\": \"Київ\",\r\n    \"address\": \"Хрещатик 1\",\r\n    \"recipient\": \"Покупець\",\r\n    \"phone\": \"+380501234567\"\r\n  }\r\n}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Read order",
+          "request": {
+            "url": "{{base_url}}/api/v1/orders/{{order_number}}",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "GET"
+          }
+        },
+        {
+          "name": "Simulate payment as staff",
+          "request": {
+            "url": "{{base_url}}/api/v1/admin/orders/{{order_number}}/transitions/pay",
+            "body": {
+              "raw": "{}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Process order",
+          "request": {
+            "url": "{{base_url}}/api/v1/admin/orders/{{order_number}}/transitions/start_processing",
+            "body": {
+              "raw": "{}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Ship order",
+          "request": {
+            "url": "{{base_url}}/api/v1/admin/orders/{{order_number}}/transitions/ship",
+            "body": {
+              "raw": "{}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Complete order",
+          "request": {
+            "url": "{{base_url}}/api/v1/admin/orders/{{order_number}}/transitions/complete",
+            "body": {
+              "raw": "{}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        },
+        {
+          "name": "Order history",
+          "request": {
+            "url": "{{base_url}}/api/v1/orders/{{order_number}}/history",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "GET"
+          }
+        },
+        {
+          "name": "GraphQL products",
+          "request": {
+            "url": "{{base_url}}/api/graphql",
+            "body": {
+              "raw": "{\r\n  \"query\": \"{ products(page_size: 10) { items { id name slug } total } }\"\r\n}",
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "Bearer {{token}}"
+              },
+              {
+                "key": "X-Cart-Token",
+                "value": "{{cart_token}}"
+              },
+              {
+                "key": "Idempotency-Key",
+                "value": "{{checkout_key}}"
+              }
+            ],
+            "method": "POST"
+          }
+        }
+      ]
+    },
+    {
+      "name": "PATCH /api/v1/admin/categories/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/categories/{{category_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Нова назва\",\n  \"is_active\": true\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/products/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/products/{{product_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Нова назва\",\n  \"status\": \"active\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/variants/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/variants/{{variant_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"is_active\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/promotion-rules/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/promotion-rules/{{rule_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"is_active\": false\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "PATCH /api/v1/admin/users/{id}",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer {{token}}"
+          }
+        ],
+        "url": "{{base_url}}/api/v1/admin/users/{{user_id}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"role\": \"ROLE_CUSTOMER\",\n  \"customer_group\": \"wholesale\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

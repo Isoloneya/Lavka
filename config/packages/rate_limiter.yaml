@@ -1,0 +1,14 @@
+framework:
+    rate_limiter:
+        commerce:
+            policy: sliding_window
+            limit: 120
+            interval: '1 minute'
+        login:
+            policy: sliding_window
+            limit: 5
+            interval: '1 minute'
+        registration:
+            policy: sliding_window
+            limit: 10
+            interval: '1 minute'

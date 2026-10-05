@@ -1,0 +1,174 @@
+{
+  "POST /api/v1/auth/register": {
+    "email": "buyer@example.com",
+    "password": "Secure-pass-123"
+  },
+  "POST /api/v1/auth/login": {
+    "email": "buyer@example.com",
+    "password": "Secure-pass-123"
+  },
+  "POST /api/v1/admin/categories": {
+    "slug": "shoes",
+    "name": "Взуття",
+    "attribute_schema": {
+      "type": "object",
+      "properties": {
+        "size": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "size"
+      ]
+    }
+  },
+  "POST /api/v1/admin/products": {
+    "category_id": "01900000-0000-7000-8000-000000000001",
+    "slug": "shoes-black",
+    "name": "Чорні кросівки",
+    "attributes": {
+      "size": 42
+    },
+    "status": "active"
+  },
+  "PATCH /api/v1/admin/categories/{id}": {
+    "name": "Нова назва",
+    "is_active": true
+  },
+  "PATCH /api/v1/admin/products/{id}": {
+    "name": "Нова назва",
+    "status": "active"
+  },
+  "POST /api/v1/admin/products/{productId}/variants": {
+    "sku": "SHOE-42-BLK",
+    "options": {
+      "color": "black",
+      "size": 42
+    }
+  },
+  "PATCH /api/v1/admin/variants/{id}": {
+    "is_active": false
+  },
+  "POST /api/v1/admin/price-lists": {
+    "code": "retail-uah",
+    "currency": "UAH",
+    "priority": 0
+  },
+  "PUT /api/v1/admin/price-lists/{id}/prices": {
+    "prices": [
+      {
+        "variant_id": "01900000-0000-7000-8000-000000000002",
+        "amount_minor": 100000,
+        "min_quantity": 1
+      },
+      {
+        "variant_id": "01900000-0000-7000-8000-000000000002",
+        "amount_minor": 90000,
+        "min_quantity": 3
+      }
+    ]
+  },
+  "POST /api/v1/admin/promotion-rules": {
+    "name": "10% на взуття",
+    "scope": "item",
+    "priority": 100,
+    "stop_processing": false,
+    "conditions": {
+      "all": [
+        {
+          "field": "item.category",
+          "op": "in",
+          "value": [
+            "shoes"
+          ]
+        }
+      ]
+    },
+    "actions": [
+      {
+        "type": "percent_discount",
+        "target": "item",
+        "value": 10
+      }
+    ]
+  },
+  "PATCH /api/v1/admin/promotion-rules/{id}": {
+    "is_active": false
+  },
+  "POST /api/v1/pricing/calculate": {
+    "currency": "UAH",
+    "items": [
+      {
+        "sku": "SHOE-42-BLK",
+        "quantity": 3
+      }
+    ]
+  },
+  "POST /api/v1/admin/promotion-rules/preview": {
+    "currency": "UAH",
+    "items": [
+      {
+        "sku": "SHOE-42-BLK",
+        "quantity": 3
+      }
+    ],
+    "rule": {
+      "name": "Preview 10%",
+      "scope": "item",
+      "priority": 100,
+      "conditions": {
+        "all": []
+      },
+      "actions": [
+        {
+          "type": "percent_discount",
+          "target": "item",
+          "value": 10
+        }
+      ]
+    }
+  },
+  "POST /api/v1/admin/warehouses": {
+    "code": "main",
+    "name": "Основний склад"
+  },
+  "PATCH /api/v1/admin/stock/{variantId}": {
+    "warehouse_id": "01900000-0000-7000-8000-000000000003",
+    "delta": 10
+  },
+  "POST /api/v1/admin/customer-groups": {
+    "code": "wholesale",
+    "name": "Гуртові покупці"
+  },
+  "PATCH /api/v1/admin/users/{id}": {
+    "role": "ROLE_CUSTOMER",
+    "customer_group": "wholesale"
+  },
+  "POST /api/v1/carts": {
+    "currency": "UAH"
+  },
+  "POST /api/v1/carts/{token}/items": {
+    "quantity": 1,
+    "sku": "DEMO-SHOE-42"
+  },
+  "PATCH /api/v1/carts/{token}/items/{itemId}": {
+    "quantity": 2
+  },
+  "PUT /api/v1/carts/{token}/coupon": {
+    "coupon_code": "SUMMER"
+  },
+  "POST /api/v1/checkout": {
+    "email": "buyer@example.com",
+    "shipping_method": "pickup",
+    "shipping_address": {
+      "country": "UA",
+      "city": "Київ",
+      "address": "Хрещатик 1",
+      "recipient": "Покупець",
+      "phone": "+380501234567"
+    }
+  },
+  "POST /api/graphql": {
+    "query": "{ products(page_size: 10) { items { id name slug } total } }"
+  }
+}

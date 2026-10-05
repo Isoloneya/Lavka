@@ -12,3 +12,13 @@ services:
 
     App\Inventory\Domain\StockRepository:
         alias: App\Inventory\Infrastructure\Doctrine\DoctrineStockRepository
+    App\Shared\Domain\RecordStore:
+        alias: App\Shared\Infrastructure\Persistence\Records
+    App\Pricing\Domain\PricingRepository:
+        alias: App\Pricing\Infrastructure\PricingRepository
+    App\Inventory\Domain\StockAdjuster:
+        alias: App\Inventory\Infrastructure\Doctrine\StockAdjuster
+    App\Shared\Domain\CommerceRepository:
+        alias: App\Shared\Infrastructure\Persistence\CommerceStorage
+    App\Payment\Domain\PaymentGateway:
+        alias: App\Payment\Infrastructure\StubPaymentGateway
