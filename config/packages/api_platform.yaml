@@ -1,4 +1,6 @@
 api_platform:
+    graphql:
+        enabled: false
     title: Lavka Engine API
     version: 0.5.0
     defaults:

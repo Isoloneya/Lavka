@@ -8,7 +8,7 @@ use App\Inventory\Domain\Exception\InsufficientStock;
 use App\Inventory\Domain\Exception\InvalidStockItem;
 use Symfony\Component\Uid\Uuid;
 
-final class StockItem
+class StockItem
 {
     private function __construct(
         private readonly Uuid $id,

@@ -284,7 +284,7 @@ final class CommerceApiTest extends WebTestCase
         self::assertObjectHasProperty('/api/v1/pricing/calculate', $document->paths);
         self::assertObjectHasProperty('/api/v1/admin/products', $document->paths);
         self::assertObjectHasProperty('bearerAuth', $document->components->securitySchemes);
-        self::assertObjectNotHasProperty('/api/v1/checkout', $document->paths);
+        self::assertObjectHasProperty('/api/v1/checkout', $document->paths);
     }
 
     public function testSwaggerUiIsAvailable(): void

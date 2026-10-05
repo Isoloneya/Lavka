@@ -2,6 +2,8 @@
 
 Headless e-commerce рушій на Symfony. Надає API для керування каталогом, цінами, складськими залишками, кошиком і замовленнями. Головна особливість: **Promotion Engine з explain-режимом**, який не лише рахує знижки за декларативними JSON-правилами, а й пояснює, чому ціна саме така (які правила застосовано, які пропущено та чому).
 
+Портфоліо-версія з повним сценарієм покупки та тестовими інтеграціями: оплата симулюється персоналом, методи доставки `pickup` і `stub_delivery` мають нульову вартість. Реальні платежі, вебхуки провайдерів, email і SMS не підключені.
+
 ## Зміст
 
 - [Проблема, яку вирішує проєкт](#проблема-яку-вирішує-проєкт)
@@ -32,7 +34,7 @@ Headless e-commerce рушій на Symfony. Надає API для керува�
 - кошик з pipeline-розрахунком (позиції → знижки → доставка → підсумок), гостьовий режим за токеном кошика;
 - оформлення замовлення з ідемпотентністю (`Idempotency-Key`) і знімком цін;
 - життєвий цикл замовлення на Symfony Workflow з журналом переходів;
-- платіжний адаптер та ідемпотентна обробка вебхуків;
+- платіжний адаптер-заглушка з явною ознакою `test_mode`;
 - ролі доступу (guest / customer / manager / admin) через Symfony Voters, аудит-лог дій персоналу;
 - REST API та GraphQL, OpenAPI-документація.
 
@@ -41,7 +43,7 @@ Headless e-commerce рушій на Symfony. Надає API для керува�
 | Шар | Технологія |
 |---|---|
 | Backend | PHP 8.3, Symfony 7.4 LTS |
-| API | API Platform (REST, GraphQL, OpenAPI) |
+| API | REST-контролери, API Platform (OpenAPI), webonyx/graphql-php (читання) |
 | ORM / міграції | Doctrine ORM, Doctrine Migrations |
 | База даних | PostgreSQL 16 (JSONB для атрибутів і правил) |
 | Кеш / блокування | Redis |
@@ -53,7 +55,7 @@ Headless e-commerce рушій на Symfony. Надає API для керува�
 | Якість коду | PHPStan (level 8+), PHP-CS-Fixer, Deptrac |
 | Інфраструктура | Docker, Docker Compose, GitHub Actions |
 
-Обґрунтування вибору технологій наведено в технічному завданні проєкту ([docs/Lavka_TZ.md](docs/Lavka_TZ.md), розділ AC-02) та в ADR-документах (`docs/adr/`).
+Обґрунтування вибору технологій наведено в [LavkaAC.md](LavkaAC.md), розділ AC-02, та в ADR-документах (`docs/adr/`).
 
 ## Системні вимоги
 
@@ -92,10 +94,9 @@ docker compose exec app bin/console lexik:jwt:generate-keypair
 | `REDIS_URL` | адреса Redis | `redis://redis:6379` |
 | `MESSENGER_TRANSPORT_DSN` | транспорт черг | `redis://redis:6379/messages` |
 | `JWT_PASSPHRASE` | пароль до приватного ключа JWT | `change-me` |
-| `JWT_TTL` | термін дії токена доступу (у секундах) | `3600` |
 | `CORS_ALLOW_ORIGIN` | дозволені origin для CORS | `^https?://(localhost\|127\.0\.0\.1)(:[0-9]+)?$` |
 | `CART_RESERVATION_TTL` | час життя резерву залишків (у секундах) | `900` |
-| `PAYMENT_WEBHOOK_SECRET` | секрет для перевірки підпису вебхуків оплати | `change-me` |
+| `MESSENGER_CONSUMER_NAME` | унікальне ім'я споживача черги | `lavka-worker-1` |
 
 ## Налаштування бази даних
 
@@ -108,16 +109,22 @@ docker compose exec app bin/console doctrine:migrations:migrate --no-interaction
 Для завантаження демо-даних (каталог, прайс-листи, правила знижок, залишки):
 
 ```bash
-docker compose exec app bin/console doctrine:fixtures:load --no-interaction
+docker compose exec app php bin/console app:seed-demo
 ```
 
 ## Запуск застосунку
 
 ```bash
-docker compose up -d
+docker compose --profile worker up -d
 ```
 
-Сервіс `worker` у складі Compose автоматично запускає обробку черг і планувальника (`messenger:consume async scheduler_default`). За потреби запустити воркер вручну:
+Профіль `worker` запускає обробку черг і планувальника (`messenger:consume async scheduler_default`), зокрема звільнення прострочених резервів. Для створення адміністратора:
+
+```bash
+docker compose exec app php bin/console app:create-staff admin@example.com ROLE_ADMIN
+```
+
+Команда запитає пароль. За потреби запустити воркер вручну:
 
 ```bash
 docker compose exec app bin/console messenger:consume async scheduler_default -vv
@@ -125,17 +132,24 @@ docker compose exec app bin/console messenger:consume async scheduler_default -v
 
 - API: http://localhost:8080
 - Інтерактивна документація REST (Swagger UI): http://localhost:8080/api/docs
-- GraphQL: http://localhost:8080/api/graphql
+- GraphQL: `POST http://localhost:8080/api/graphql`, схема — `config/graphql.graphql`
 - Перевірка стану: http://localhost:8080/health
 
 ## Запуск тестів
 
+Перед першим запуском підготуйте тестову базу:
+
 ```bash
-docker compose exec app composer test        # PHPUnit: unit, integration, functional
-docker compose exec app composer stan        # PHPStan
-docker compose exec app composer cs          # PHP-CS-Fixer
-docker compose exec app composer deptrac     # контроль меж контекстів і шарів
-docker compose exec app composer infection   # mutation testing (Pricing Engine)
+docker compose exec app php bin/console doctrine:database:create --env=test --if-not-exists
+docker compose exec app php bin/console doctrine:migrations:migrate --env=test --no-interaction
+```
+
+```bash
+docker compose exec app composer test
+docker compose exec app composer stan
+docker compose exec app composer cs
+docker compose exec app composer deptrac
+docker compose exec app composer infection
 ```
 
 ## Структура проєкту
@@ -153,7 +167,7 @@ lavka-engine/
 │   ├── Inventory/            # залишки та резерви
 │   ├── Cart/                 # кошик і його розрахунок
 │   ├── Order/                # замовлення, Workflow, історія переходів
-│   ├── Payment/              # платіжний інтерфейс, вебхуки
+│   ├── Payment/              # платіжний інтерфейс і тестовий адаптер
 │   └── Identity/             # користувачі, групи покупців, JWT, ролі
 │       └── (кожен контекст: Domain / Application / Infrastructure / Api)
 ├── tests/
@@ -162,10 +176,11 @@ lavka-engine/
 │   └── Functional/
 ├── docker/
 ├── docs/
-│   ├── Lavka_TZ.md           # технічне завдання проєкту
 │   ├── adr/                  # рішення щодо архітектури
-│   └── diagrams/             # C4, state machine, ER-діаграма
+│   └── diagrams/             # потік покупки та стани замовлення
+├── LavkaAC.md
 ├── compose.yaml
+├── compose.prod.yaml
 ├── composer.json
 ├── phpstan.neon
 ├── deptrac.yaml
@@ -186,9 +201,9 @@ lavka-engine/
 | Cart | `/api/v1/carts` | кошик, позиції, купон |
 | Checkout | `/api/v1/checkout` | оформлення замовлення |
 | Orders | `/api/v1/orders`, `/api/v1/admin/orders` | замовлення та їхні переходи |
-| Payments | `/api/v1/payments/webhook/{provider}` | вебхуки платіжних провайдерів |
+| Тестова оплата | `/api/v1/admin/orders/{number}/transitions/pay` | симуляція оплати для manager/admin |
 
-Помилки повертаються у форматі RFC 9457 (`application/problem+json`) із машинозчитуваним полем `code`. Формат помилок і коди відповіді детально описані в технічному завданні ([docs/Lavka_TZ.md](docs/Lavka_TZ.md), розділи AC-06 та AC-13).
+Помилки REST повертаються у форматі RFC 9457 (`application/problem+json`) із машинозчитуваним полем `code`. GraphQL повертає помилки в `errors`. Postman-колекція: [docs/Lavka.postman_collection.json](docs/Lavka.postman_collection.json).
 
 ## Приклад типового сценарію використання
 
@@ -197,8 +212,8 @@ lavka-engine/
 3. Менеджер задає ціну у прайс-листі (`PUT /api/v1/admin/price-lists/{id}/prices`) і залишок (`PATCH /api/v1/admin/stock/{variant_id}`).
 4. Менеджер створює правило знижки: `POST /api/v1/admin/promotion-rules` (перед збереженням ефект можна перевірити через `POST /api/v1/admin/promotion-rules/preview`).
 5. Покупець (навіть без реєстрації) створює кошик і додає товар: `POST /api/v1/carts`, `POST /api/v1/carts/{token}/items`. У відповіді `GET /api/v1/carts/{token}` є блок `pricing` з розрахунком і поясненням знижок.
-6. Покупець оформлює замовлення: `POST /api/v1/checkout` із заголовком `Idempotency-Key`. Система перераховує кошик на сервері, резервує залишки й створює замовлення зі статусом `pending_payment`.
-7. Платіжний провайдер надсилає вебхук `POST /api/v1/payments/webhook/{provider}`: замовлення переходить у `paid`.
+6. Покупець оформлює замовлення: `POST /api/v1/checkout` із заголовками `X-Cart-Token` та `Idempotency-Key`. Система перераховує кошик на сервері, резервує залишки й створює замовлення зі статусом `pending_payment`.
+7. Менеджер симулює оплату через `POST /api/v1/admin/orders/{number}/transitions/pay`: замовлення переходить у `paid`, платіж отримує статус `simulated_paid`. Реальні кошти не списуються.
 8. Менеджер веде замовлення за станами: `POST /api/v1/admin/orders/{number}/transitions/start_processing`, далі `ship`, `complete`. Історія переходів доступна через `GET /api/v1/orders/{number}/history`.
 
 Приклад запитів:
@@ -218,7 +233,7 @@ curl -X POST http://localhost:8080/api/v1/checkout \
   -H "Content-Type: application/json" \
   -H "X-Cart-Token: <CART_TOKEN>" \
   -H "Idempotency-Key: 7f3c2b1e-0d5a-4a55-9c0f-2f1c3a6e9b10" \
-  -d '{"email": "buyer@example.com", "shipping_address": {"country": "UA", "city": "Київ", "address": "вул. Хрещатик, 1", "recipient": "Іван Петренко", "phone": "+380501234567"}}'
+  -d '{"email": "buyer@example.com", "shipping_method": "pickup", "shipping_address": {"country": "UA", "city": "Київ", "address": "вул. Хрещатик, 1", "recipient": "Іван Петренко", "phone": "+380501234567"}}'
 ```
 
 Приклад фрагмента відповіді кошика з поясненням знижок (суми у копійках):
@@ -242,17 +257,20 @@ curl -X POST http://localhost:8080/api/v1/checkout \
 
 ## Розгортання
 
-Застосунок збирається як Docker-образ (multi-stage build, `composer install --no-dev --optimize-autoloader`, `APP_ENV=prod`, `APP_DEBUG=0`) і розгортається на VPS із Docker Compose або на платформі з підтримкою контейнерів (наприклад, Fly.io, Railway). Окремо запускаються веб-процес і воркер:
+Для тестового production використовуйте `compose.prod.yaml`: образ без dev-залежностей, користувач `www-data`, `APP_DEBUG=0`, Caddy з автоматичним HTTPS та окремий worker. PostgreSQL і Redis не публікуються назовні.
+
+У `.env.prod.local` задайте `SERVER_NAME`, `APP_SECRET`, `POSTGRES_PASSWORD`, `DATABASE_URL`, `JWT_PASSPHRASE`, `JWT_PRIVATE_FILE`, `JWT_PUBLIC_FILE` та `CORS_ALLOW_ORIGIN`. Пароль у `DATABASE_URL` має збігатися з `POSTGRES_PASSWORD`; URL повинен містити `serverVersion=16.0.0`. Шляхи JWT вказують на пару ключів поза образом; приватний ключ має читатися UID 33 контейнера. Домен має вказувати на сервер із відкритими портами 80 і 443.
+
+Перший запуск:
 
 ```bash
-# воркер черг і планувальника
-bin/console messenger:consume async scheduler_default --time-limit=3600
+docker compose --env-file .env.prod.local -f compose.prod.yaml config --quiet
+docker compose --env-file .env.prod.local -f compose.prod.yaml build
+docker compose --env-file .env.prod.local -f compose.prod.yaml up -d database redis
+docker compose --env-file .env.prod.local -f compose.prod.yaml run --rm app php bin/console doctrine:migrations:migrate --no-interaction
+docker compose --env-file .env.prod.local -f compose.prod.yaml run --rm app php bin/console cache:clear
+docker compose --env-file .env.prod.local -f compose.prod.yaml run --rm app php bin/console cache:warmup
+docker compose --env-file .env.prod.local -f compose.prod.yaml up -d app worker
 ```
 
-Перед першим запуском і при кожному оновленні на цільовому середовищі необхідно застосувати міграції:
-
-```bash
-bin/console doctrine:migrations:migrate --no-interaction
-```
-
-Адреса бази даних передається через `DATABASE_URL`, секрети (`APP_SECRET`, `JWT_PASSPHRASE`, `PAYMENT_WEBHOOK_SECRET`) задаються через змінні середовища платформи або Symfony Secrets. Демо-дані (fixtures) у production не завантажуються. GitHub Actions виконує на кожен push перевірку стилю, PHPStan, Deptrac і PHPUnit.
+Перевірте `/health` і `/api/docs`, створіть адміністратора командою `app:create-staff`. Перед оновленням зробіть резервну копію БД; після збірки зупиніть app і worker, застосуйте міграції, очистьте та прогрійте кеш, потім запустіть сервіси. GitHub Actions виконує PHPUnit, PHPStan, перевірку стилю, Deptrac, Infection, production-збірку та smoke-тест. Розгортання на сервер виконується окремо.

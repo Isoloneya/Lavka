@@ -113,6 +113,7 @@ final readonly class PricingService
             throw new ApiProblem(422, 'VALIDATION_FAILED', 'Очікується масив до 100 позицій.', 'items');
         }
         $lines = [];
+        $linePrices = new \stdClass();
         $seen = [];
         foreach ($items as $raw) {
             if (!$raw instanceof \stdClass) {
@@ -128,6 +129,7 @@ final readonly class PricingService
             $quantity = $item->integer('quantity', 1, 100);
             $variant = $this->repository->variant($sku);
             $amount = $this->repository->price($variant->id, $currency, $customerGroup, $quantity);
+            $linePrices->{$sku} = $amount;
             $lines[] = new PricingLine($sku, $variant->category, Money::of($amount, $currency), $quantity);
         }
 
@@ -165,7 +167,7 @@ final readonly class PricingService
             $skipped[] = ['rule_id' => $rule->ruleId, 'name' => $rule->name, 'reason' => $rule->reason];
         }
 
-        return (object) ['currency' => $currency, 'subtotal' => $result->subtotal->amount, 'discount' => $result->discount->amount, 'total' => $result->total->amount, 'applied_rules' => $applied, 'skipped_rules' => $skipped];
+        return (object) ['currency' => $currency, 'subtotal' => $result->subtotal->amount, 'discount' => $result->discount->amount, 'total' => $result->total->amount, 'applied_rules' => $applied, 'skipped_rules' => $skipped, 'unit_prices' => $linePrices];
     }
 
     private function validatePeriod(\stdClass $record): void

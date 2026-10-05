@@ -13,7 +13,7 @@ use App\Shared\Application\Input;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\RateLimiter\RateLimiterFactory;
+use Symfony\Component\RateLimiter\RateLimiterFactoryInterface;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 
@@ -27,7 +27,7 @@ final class AuthController extends AbstractController
     }
 
     #[Route('/api/v1/auth/register', methods: ['POST'])]
-    public function register(Request $request, RegisterUser $register, RateLimiterFactory $registrationLimiter): JsonResponse
+    public function register(Request $request, RegisterUser $register, RateLimiterFactoryInterface $registrationLimiter): JsonResponse
     {
         if (!$registrationLimiter->create($request->getClientIp() ?? 'unknown')->consume()->isAccepted()) {
             throw new ApiProblem(429, 'RATE_LIMITED', 'Забагато спроб реєстрації.');

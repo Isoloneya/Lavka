@@ -143,5 +143,32 @@
   "PATCH /api/v1/admin/users/{id}": {
     "role": "ROLE_CUSTOMER",
     "customer_group": "wholesale"
+  },
+  "POST /api/v1/carts": {
+    "currency": "UAH"
+  },
+  "POST /api/v1/carts/{token}/items": {
+    "quantity": 1,
+    "sku": "DEMO-SHOE-42"
+  },
+  "PATCH /api/v1/carts/{token}/items/{itemId}": {
+    "quantity": 2
+  },
+  "PUT /api/v1/carts/{token}/coupon": {
+    "coupon_code": "SUMMER"
+  },
+  "POST /api/v1/checkout": {
+    "email": "buyer@example.com",
+    "shipping_method": "pickup",
+    "shipping_address": {
+      "country": "UA",
+      "city": "Київ",
+      "address": "Хрещатик 1",
+      "recipient": "Покупець",
+      "phone": "+380501234567"
+    }
+  },
+  "POST /api/graphql": {
+    "query": "{ products(page_size: 10) { items { id name slug } total } }"
   }
 }

@@ -8,12 +8,12 @@ use App\Shared\Application\ApiProblem;
 use App\Shared\Application\Input;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
-use Symfony\Component\RateLimiter\RateLimiterFactory;
+use Symfony\Component\RateLimiter\RateLimiterFactoryInterface;
 
 #[AsEventListener(event: 'kernel.request', priority: 9)]
 final class NormalizeLoginListener
 {
-    public function __construct(private readonly RateLimiterFactory $loginLimiter)
+    public function __construct(private readonly RateLimiterFactoryInterface $loginLimiter)
     {
     }
 

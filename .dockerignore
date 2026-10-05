@@ -1,4 +1,14 @@
 .git
+.env.local
+.env.*.local
+.env.local.php
+config/jwt/*.pem
+config/secrets/*/*decrypt.private.php
 vendor
 var
 node_modules
+.phpunit.cache
+.php-cs-fixer.cache
+.idea
+.vscode
+backups

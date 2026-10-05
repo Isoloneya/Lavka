@@ -7,7 +7,7 @@ namespace App\Catalog\Domain;
 use App\Catalog\Domain\Exception\InvalidProduct;
 use Symfony\Component\Uid\Uuid;
 
-final class Product
+class Product
 {
     private readonly \DateTimeImmutable $createdAt;
 

@@ -7,7 +7,7 @@ namespace App\Catalog\Domain;
 use App\Catalog\Domain\Exception\InvalidCategory;
 use Symfony\Component\Uid\Uuid;
 
-final class Category
+class Category
 {
     /**
      * @param array<string, mixed> $attributeSchema

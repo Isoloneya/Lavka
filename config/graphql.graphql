@@ -1,0 +1,23 @@
+type Query {
+    categories(page: Int = 1, page_size: Int = 20): CategoryPage!
+    products(page: Int = 1, page_size: Int = 20, q: String, category: String, currency: String = "UAH"): ProductPage!
+    product(slug: String!): Product
+    cart: Cart
+    orders(page: Int = 1, page_size: Int = 20): OrderPage!
+    order(number: String!): Order
+}
+
+type Category { id: ID!, name: String!, slug: String!, parent_id: ID }
+type CategoryPage { items: [Category!]!, total: Int!, page: Int!, page_size: Int! }
+type Product { id: ID!, name: String!, slug: String!, description: String, currency: String, base_price_minor: String, variants: [Variant!] }
+type ProductPage { items: [Product!]!, total: Int!, page: Int!, page_size: Int! }
+type Variant { id: ID!, sku: String! }
+type Cart { id: ID!, status: String!, currency: String!, coupon_code: String, items: [CartItem!]!, pricing: Pricing! }
+type CartItem { id: ID!, variant_id: ID!, sku: String!, name: String!, quantity: Int! }
+type Pricing { currency: String!, subtotal: String!, discount: String!, shipping: String!, total: String!, applied_rules: [AppliedRule!]!, skipped_rules: [SkippedRule!]! }
+type AppliedRule { rule_id: String!, name: String!, scope: String!, discount: String! }
+type SkippedRule { rule_id: String!, name: String!, reason: String! }
+type Order { id: ID!, number: String!, status: String!, currency: String!, subtotal_minor: String!, discount_minor: String!, shipping_minor: String!, total_minor: String!, placed_at: String!, expires_at: String!, items: [OrderItem!], payment: Payment }
+type OrderItem { id: ID!, sku: String!, name: String!, quantity: Int!, unit_price_minor: String! }
+type Payment { provider: String!, status: String!, amount_minor: String!, currency: String!, test_mode: Boolean! }
+type OrderPage { items: [Order!]!, total: Int!, page: Int!, page_size: Int! }

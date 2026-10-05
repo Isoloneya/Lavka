@@ -1,0 +1,94 @@
+name: lavka-prod
+
+x-app: &app
+  image: ${LAVKA_IMAGE:-lavka:production}
+  build:
+    context: .
+    dockerfile: docker/php/Dockerfile.prod
+  restart: unless-stopped
+  environment: &environment
+    APP_ENV: prod
+    APP_DEBUG: '0'
+    APP_SECRET: ${APP_SECRET:?Set APP_SECRET}
+    SERVER_NAME: ${SERVER_NAME:?Set SERVER_NAME}
+    DATABASE_URL: ${DATABASE_URL:?Set DATABASE_URL}
+    REDIS_URL: redis://redis:6379
+    MESSENGER_TRANSPORT_DSN: redis://redis:6379/messages
+    MESSENGER_CONSUMER_NAME: ${MESSENGER_CONSUMER_NAME:-lavka-worker-1}
+    JWT_SECRET_KEY: /run/secrets/jwt_private
+    JWT_PUBLIC_KEY: /run/secrets/jwt_public
+    JWT_PASSPHRASE: ${JWT_PASSPHRASE:?Set JWT_PASSPHRASE}
+    CORS_ALLOW_ORIGIN: ${CORS_ALLOW_ORIGIN:?Set CORS_ALLOW_ORIGIN}
+    DEFAULT_URI: https://${SERVER_NAME}
+    CART_RESERVATION_TTL: ${CART_RESERVATION_TTL:-900}
+    LOCK_DSN: redis://redis:6379
+  secrets:
+    - jwt_private
+    - jwt_public
+  volumes:
+    - app_var:/app/var
+  cap_drop: [ALL]
+  cap_add: [NET_BIND_SERVICE]
+  security_opt:
+    - no-new-privileges:true
+  depends_on:
+    database:
+      condition: service_healthy
+    redis:
+      condition: service_healthy
+
+services:
+  app:
+    <<: *app
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp'
+    volumes:
+      - app_var:/app/var
+      - caddy_data:/data
+      - caddy_config:/config
+  worker:
+    <<: *app
+    command: php bin/console messenger:consume async scheduler_default --time-limit=3600 --memory-limit=192M --no-interaction
+    healthcheck:
+      disable: true
+    stop_grace_period: 60s
+  database:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: lavka
+      POSTGRES_USER: app
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD}
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ['CMD-SHELL', 'pg_isready -U app -d lavka']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy noeviction
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ['CMD', 'redis-cli', 'ping']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+secrets:
+  jwt_private:
+    file: ${JWT_PRIVATE_FILE:?Set JWT_PRIVATE_FILE}
+  jwt_public:
+    file: ${JWT_PUBLIC_FILE:?Set JWT_PUBLIC_FILE}
+
+volumes:
+  app_var:
+  db_data:
+  redis_data:
+  caddy_data:
+  caddy_config:
