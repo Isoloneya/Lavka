@@ -1,0 +1,25 @@
+{% extends 'storefront/base.html.twig' %}
+{% block title %}Кошик — Lavka{% endblock %}
+{% block content %}
+<section class="shopping-page">
+    <div class="section-heading"><h1>Кошик</h1><a href="{{ path('storefront_catalog') }}">Продовжити покупки ↗</a></div>
+    {% if error %}<p class="notice error" role="alert">{{ error }}</p><form method="post" action="{{ path('storefront_cart_change') }}"><input type="hidden" name="_token" value="{{ csrf }}"><button class="button" name="operation" value="reset">Почати новий кошик</button></form>{% endif %}
+    {% if cart and cart.items|length %}
+    <div class="shopping-layout"><div>
+        {% for item in cart.items %}
+        <article class="cart-row"><div><h2>{{ item.name }}</h2><p class="price-note">{{ item.sku }}</p><p>{{ (attribute(cart.pricing.unit_prices, item.sku) / 100)|number_format(2, ',', ' ') }} ₴ / шт.</p></div>
+            <form method="post" action="{{ path('storefront_cart_change') }}" class="quantity-form">
+                <input type="hidden" name="_token" value="{{ csrf }}"><input type="hidden" name="item_id" value="{{ item.id }}">
+                <label>Кількість<input aria-label="Кількість {{ item.sku }}" type="number" name="quantity" min="1" max="100" value="{{ item.quantity }}" required></label>
+                <button class="button" name="operation" value="quantity">Оновити</button><button class="text-button" name="operation" value="remove" formnovalidate>Видалити</button>
+            </form>
+        </article>
+        {% endfor %}
+        <form class="coupon-form" method="post" action="{{ path('storefront_cart_change') }}"><input type="hidden" name="_token" value="{{ csrf }}">
+            {% if cart.coupon_code %}<p>Купон: {{ cart.coupon_code }}</p><button class="button" name="operation" value="clear_coupon">Прибрати купон</button>
+            {% else %}<label>Купон<input name="coupon_code" maxlength="64" required placeholder="Код купона"></label><button class="button" name="operation" value="coupon">Застосувати</button>{% endif %}
+        </form>
+    </div><aside>{% include 'storefront/_totals.html.twig' %}<a class="button filled full" href="{{ path('storefront_checkout') }}">Оформити замовлення</a><p class="price-note">Наявність перевіряється під час оформлення.</p></aside></div>
+    {% elseif not error %}<div class="empty"><h2>У кошику поки порожньо</h2><p>Знайди свою річ у колекції.</p><a class="button" href="{{ path('storefront_catalog') }}">До каталогу</a></div>{% endif %}
+</section>
+{% endblock %}

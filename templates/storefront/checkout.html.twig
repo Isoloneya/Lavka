@@ -1,0 +1,22 @@
+{% extends 'storefront/base.html.twig' %}
+{% block title %}Оформлення — Lavka{% endblock %}
+{% block content %}
+<section class="shopping-page"><div class="section-heading"><h1>Оформлення замовлення</h1><a href="{{ path('storefront_cart') }}">← Кошик</a></div>
+{% if error %}<p class="notice error" role="alert">{{ error }}</p>{% endif %}
+<div class="shopping-layout"><form class="checkout-form" method="post" action="{{ path('storefront_checkout') }}">
+    <input type="hidden" name="_token" value="{{ csrf }}">
+    <input type="hidden" name="checkout_key" value="{{ checkout_key }}">
+    <h2>Контактні дані</h2>
+    <label>Email<input type="email" name="email" value="{{ values.email|default('') }}" autocomplete="email" maxlength="254" required></label>
+    <label>Одержувач<input name="recipient" value="{{ values.recipient|default('') }}" autocomplete="name" maxlength="100" required></label>
+    <label>Телефон<input type="tel" name="phone" value="{{ values.phone|default('') }}" autocomplete="tel" maxlength="30" required></label>
+    <h2>Доставка</h2>
+    <label>Спосіб<select name="shipping_method"><option value="pickup" {% if values.shipping_method|default('pickup') == 'pickup' %}selected{% endif %}>Самовивіз — 0 ₴ (демо)</option><option value="stub_delivery" {% if values.shipping_method|default('') == 'stub_delivery' %}selected{% endif %}>Тестова доставка — 0 ₴</option></select></label>
+    <label>Країна<select name="country"><option value="UA">Україна</option></select></label>
+    <label>Місто<input name="city" value="{{ values.city|default('') }}" autocomplete="address-level2" maxlength="100" required></label>
+    <label>Адреса<input name="address" value="{{ values.address|default('') }}" autocomplete="street-address" maxlength="255" required></label>
+    <p class="price-note">Це демонстраційне замовлення. Кошти не списуються, фактична доставка не виконується. Оплату симулює персонал.</p>
+    <button type="submit" class="button filled">Створити замовлення</button>
+</form><aside>{% include 'storefront/_totals.html.twig' %}<p class="price-note">Сума й наявність повторно перевіряються сервером.</p></aside></div>
+</section>
+{% endblock %}

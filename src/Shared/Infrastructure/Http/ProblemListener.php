@@ -24,6 +24,10 @@ final readonly class ProblemListener
 
     public function __invoke(ExceptionEvent $event): void
     {
+        if (!str_starts_with($event->getRequest()->getPathInfo(), '/api/')) {
+            return;
+        }
+
         $error = $event->getThrowable();
         $status = 500;
         $code = 'INTERNAL_ERROR';

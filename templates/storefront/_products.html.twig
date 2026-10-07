@@ -1,0 +1,20 @@
+<div class="product-grid">
+{% for product in products.items %}
+    <article class="product-card">
+        <a href="{{ path('storefront_product', {slug: product.slug}) }}">
+            <div class="product-image">
+                {% set photo = product.attributes.image|default('') %}
+                {% set alternate = product.attributes.image_hover|default('') %}
+                {% if photo starts with '/media/' %}
+                    <img src="{{ photo }}" alt="{{ product.name }}" loading="lazy" width="600" height="760">
+                    {% if alternate starts with '/media/' %}<img class="alternate" src="{{ alternate }}" alt="{{ product.name }} — інший ракурс" loading="lazy" width="600" height="760">{% endif %}
+                {% else %}<span class="image-placeholder"><span>L / {{ '%02d'|format(loop.index) }}</span><small>Фото готується</small></span>{% endif %}
+            </div>
+            <h3>{{ product.name }}</h3>
+            <p>{% if product.base_price_minor is not null %}Від {{ (product.base_price_minor / 100)|number_format(2, ',', ' ') }} ₴{% else %}Ціна уточнюється{% endif %}</p>
+        </a>
+    </article>
+{% else %}
+    <div class="empty"><h2>Поки нічого не знайдено</h2><p>Спробуй іншу назву або категорію.</p><a class="button" href="{{ path('storefront_catalog') }}">Увесь каталог</a></div>
+{% endfor %}
+</div>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lavka — одяг та речі для щоденного ритму. Колекції, деталі й актуальні ціни.">
+    <title>{% block title %}Lavka — свій ритм{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('storefront/storefront.css') }}">
+    <script src="{{ asset('storefront/storefront.js') }}" defer></script>
+</head>
+<body class="{% block body_class %}{% endblock %}">
+<a class="skip" href="#main">До вмісту</a>
+<header class="site-header">
+    <nav aria-label="Основне меню">
+        <a href="{{ path('storefront_catalog') }}">Магазин</a>
+        <a class="desktop-link" href="{{ path('storefront_home') }}#collections">Колекція 26</a>
+    </nav>
+    <a class="brand" href="{{ path('storefront_home') }}" aria-label="Lavka — головна">LAVKA</a>
+    <nav aria-label="Пошук і каталог">
+        <a href="{{ path('storefront_catalog') }}#search">Пошук</a>
+        <a href="{{ path('storefront_cart') }}">Кошик</a>
+        <a href="{{ path('storefront_account') }}">{{ app.user ? 'Кабінет' : 'Вхід' }}</a>
+    </nav>
+</header>
+<main id="main">{% for type, messages in app.flashes %}{% for message in messages %}<p class="notice {{ type }}" role="status">{{ message }}</p>{% endfor %}{% endfor %}{% block content %}{% endblock %}</main>
+<footer class="site-footer">
+    <div class="footer-columns">
+        <div><h2>Колекції</h2><a href="{{ path('storefront_catalog') }}">Усі речі</a><a href="{{ path('storefront_catalog', {sort: 'created_at'}) }}">Нові надходження</a></div>
+        <div><h2>Lavka</h2><p>Свій ритм. Свій вибір.</p><p>Речі, які залишаються з тобою.</p></div>
+        <div><h2>Україна / UAH</h2><p>Демонстраційний магазин.</p><p>Реальні платежі не проводяться.</p></div>
+    </div>
+    <div class="footer-bottom"><span>© {{ 'now'|date('Y') }} LAVKA</span><a href="#main">Вгору ↑</a></div>
+</footer>
+</body>
+</html>

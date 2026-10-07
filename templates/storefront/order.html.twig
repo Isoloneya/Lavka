@@ -1,0 +1,12 @@
+{% extends 'storefront/base.html.twig' %}
+{% block title %}Замовлення {{ order.number }} — Lavka{% endblock %}
+{% block content %}
+<section class="shopping-page order-page"><p class="eyebrow">LAVKA / ЗАМОВЛЕННЯ</p><h1>Замовлення {{ order.number }}</h1>
+{% set statuses = {'pending_payment': 'Очікує тестового підтвердження оплати', 'paid': 'Тестову оплату підтверджено', 'processing': 'В обробці', 'shipped': 'Передано на тестову доставку', 'completed': 'Завершено', 'cancelled': 'Скасовано'} %}
+<p class="order-status">{{ statuses[order.status]|default(order.status) }}</p>
+<p>Реальні кошти не списуються. Це тестовий сценарій магазину.</p>
+{% if order.status == 'pending_payment' %}<p class="price-note">Резерв діє до {{ order.expires_at|date('d.m.Y H:i', 'Europe/Kyiv') }} (Київ). Після завершення терміну неоплачене замовлення підлягає скасуванню.</p>{% endif %}
+<div class="order-items">{% for item in order.items %}<div class="variant"><span>{{ item.name|default(item.sku) }} × {{ item.quantity }}</span><span>{{ (item.unit_price_minor * item.quantity / 100)|number_format(2, ',', ' ') }} ₴</span></div>{% endfor %}</div>
+<div class="totals"><div><span>Знижка</span><span>−{{ (order.discount_minor / 100)|number_format(2, ',', ' ') }} ₴</span></div><div class="grand-total"><strong>Разом</strong><strong>{{ (order.total_minor / 100)|number_format(2, ',', ' ') }} ₴</strong></div></div>
+<a class="button" href="{{ path('storefront_catalog') }}">Продовжити покупки</a></section>
+{% endblock %}

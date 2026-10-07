@@ -1,0 +1,31 @@
+{% extends 'storefront/base.html.twig' %}
+{% block title %}{{ product.name }} — Lavka{% endblock %}
+{% block content %}
+<section class="product-detail">
+    <div class="detail-image product-image">
+        {% set photo = product.attributes.image|default('') %}
+        {% if photo starts with '/media/' %}<img src="{{ photo }}" alt="{{ product.name }}" width="900" height="1100">{% else %}<span class="image-placeholder"><span>LAVKA</span><small>Фото готується</small></span>{% endif %}
+    </div>
+    <div class="detail-copy">
+        <a class="back-link" href="{{ path('storefront_catalog') }}">← Каталог</a>
+        <h1>{{ product.name }}</h1>
+        <p class="description">{{ product.description|default('Деталі товару незабаром.', true) }}</p>
+        <h2>Варіанти та базові ціни</h2>
+        <div class="variants">
+            {% for variant in product.variants %}
+                <div class="variant"><div><strong>{{ variant.sku }}</strong><p>{% for key, value in variant.options %}{% if value is not iterable %}{{ key }}: {{ value }}{% if not loop.last %} / {% endif %}{% endif %}{% endfor %}</p></div><span>{% if variant.price_minor is not null %}{{ (variant.price_minor / 100)|number_format(2, ',', ' ') }} ₴{% else %}Ціна уточнюється{% endif %}</span></div>
+            {% else %}<p>Доступних варіантів поки немає.</p>{% endfor %}
+        </div>
+        <p class="price-note">Ціни за одну одиницю, без персональних і кошикових знижок.</p>
+        {% if product.variants|filter(v => v.price_minor is not null)|length %}
+        <form class="purchase-form" action="{{ path('storefront_cart_add') }}" method="post">
+            <input type="hidden" name="_token" value="{{ csrf }}">
+            <label>Варіант<select name="sku" required>{% for variant in product.variants %}{% if variant.price_minor is not null %}<option value="{{ variant.sku }}">{{ variant.sku }} — {{ (variant.price_minor / 100)|number_format(2, ',', ' ') }} ₴</option>{% endif %}{% endfor %}</select></label>
+            <label>Кількість<input type="number" name="quantity" min="1" max="100" value="1" required></label>
+            <button class="button filled" type="submit">До кошика</button>
+        </form>
+        {% endif %}
+        <details><summary>Характеристики</summary><dl>{% for key, value in product.attributes %}{% if key not in ['image', 'image_hover'] and value is not iterable %}<dt>{{ key }}</dt><dd>{{ value }}</dd>{% endif %}{% else %}<dd>Додаткових характеристик немає.</dd>{% endfor %}</dl></details>
+    </div>
+</section>
+{% endblock %}

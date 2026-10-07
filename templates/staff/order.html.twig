@@ -1,0 +1,8 @@
+{% extends 'staff/base.html.twig' %}
+{% block staff_content %}
+<a href="{{ path('staff_orders') }}">← Замовлення</a><h1>{{ order.number }}</h1>{% if error %}<p class="notice error" role="alert">{{ error }}</p>{% endif %}<p>{{ order.email }} / {{ order.status }}</p><p>{{ order.shipping_address.recipient }}, {{ order.shipping_address.phone }}</p><p>{{ order.shipping_address.city }}, {{ order.shipping_address.address }}</p><p>Доставка: {{ order.shipping_method == 'pickup' ? 'Самовивіз' : 'Тестова доставка' }}</p>
+<div class="order-items">{% for item in order.items %}<div class="variant"><span>{{ item.name }} / {{ item.sku }} × {{ item.quantity }}</span><strong>{{ (item.unit_price_minor * item.quantity / 100)|number_format(2, ',', ' ') }} ₴</strong></div>{% endfor %}</div><p>Знижка: {{ (order.discount_minor / 100)|number_format(2, ',', ' ') }} ₴</p><h2>Разом {{ (order.total_minor / 100)|number_format(2, ',', ' ') }} ₴</h2>
+{% set actions = {'pending_payment':{'pay':'Підтвердити тестову оплату','cancel':'Скасувати'},'paid':{'start_processing':'В обробку','cancel':'Скасувати'},'processing':{'ship':'Відправити (демо)','cancel':'Скасувати'},'shipped':{'complete':'Завершити'}} %}
+<form class="staff-actions" method="post"><input type="hidden" name="_token" value="{{ csrf }}">{% for key,label in actions[order.status]|default({}) %}<button class="button" name="transition" value="{{ key }}">{{ label }}</button>{% endfor %}</form><p class="price-note">Платежі та доставка симулюються. Реальні кошти не списуються.</p>
+<h2>Історія станів</h2>{% for entry in history.items %}<p>{{ entry.created_at|date('d.m.Y H:i', 'Europe/Kyiv') }} — {{ entry.to_status }}</p>{% else %}<p>Історія порожня.</p>{% endfor %}
+{% endblock %}
