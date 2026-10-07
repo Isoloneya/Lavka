@@ -1,0 +1,3 @@
+{% extends 'storefront/base.html.twig' %}
+{% block title %}{{ status_code }} — Lavka{% endblock %}
+{% block content %}<section class="empty"><p>{{ status_code }}</p><h1>{% if status_code == 404 %}Сторінку не знайдено{% elseif status_code == 400 %}Перевір параметри запиту{% else %}Не вдалося відкрити сторінку{% endif %}</h1><a class="button" href="{{ path('storefront_catalog') }}">До каталогу</a></section>{% endblock %}

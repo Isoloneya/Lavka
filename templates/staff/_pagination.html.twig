@@ -1,0 +1,1 @@
+<nav class="pagination" aria-label="Сторінки"><span>{{ rows.total }} записів / сторінка {{ rows.page }}</span>{% if rows.page > 1 %}<a href="{{ path(route, parameters|merge({page:rows.page-1})) }}">← Назад</a>{% endif %}{% if rows.page * rows.page_size < rows.total %}<a href="{{ path(route, parameters|merge({page:rows.page+1})) }}">Далі →</a>{% endif %}</nav>

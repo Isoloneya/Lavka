@@ -1,0 +1,8 @@
+<div class="totals">
+    <h2>Підсумок</h2>
+    <div><span>Товари</span><span>{{ (cart.pricing.subtotal / 100)|number_format(2, ',', ' ') }} ₴</span></div>
+    <div><span>Знижки</span><span>−{{ (cart.pricing.discount / 100)|number_format(2, ',', ' ') }} ₴</span></div>
+    {% for rule in cart.pricing.applied_rules %}<p class="price-note">{{ rule.name }}: −{{ (rule.discount / 100)|number_format(2, ',', ' ') }} ₴</p>{% endfor %}
+    <div><span>Доставка (демо)</span><span>0,00 ₴</span></div>
+    <div class="grand-total"><strong>Разом</strong><strong>{{ (cart.pricing.total / 100)|number_format(2, ',', ' ') }} ₴</strong></div>
+</div>

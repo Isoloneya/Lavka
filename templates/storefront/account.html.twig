@@ -1,0 +1,10 @@
+{% extends 'storefront/base.html.twig' %}
+{% block title %}Мій кабінет — Lavka{% endblock %}
+{% block content %}
+<section class="shopping-page"><div class="section-heading"><div><h1>Мій кабінет</h1><p>{{ customer.email }}</p></div><form method="post" action="{{ path('storefront_logout') }}"><input type="hidden" name="_token" value="{{ csrf }}"><button class="button" type="submit">Вийти</button></form></div>
+<h2>Мої замовлення</h2><p class="price-note">Тут з’являються замовлення, оформлені після входу. Попередні гостьові замовлення не прив’язуються за адресою email.</p>
+{% if is_granted('ROLE_MANAGER') %}<p><a class="button" href="{{ path('staff_home') }}">Керування магазином</a></p>{% endif %}
+<div class="account-orders">{% for order in orders.items %}<a class="variant" href="{{ path('storefront_order', {number: order.number}) }}"><span>{{ order.number }}<small>{{ order.placed_at|date('d.m.Y H:i', 'Europe/Kyiv') }}</small></span><span>{{ {'pending_payment':'Очікує тестової оплати','paid':'Оплачено (демо)','processing':'В обробці','shipped':'Відправлено (демо)','completed':'Завершено','cancelled':'Скасовано'}[order.status]|default(order.status) }}</span><strong>{{ (order.total_minor / 100)|number_format(2, ',', ' ') }} ₴ →</strong></a>{% else %}<div class="empty"><p>Замовлень ще немає.</p><a class="button" href="{{ path('storefront_catalog') }}">До каталогу</a></div>{% endfor %}</div>
+<nav class="pagination" aria-label="Сторінки замовлень">{% if orders.page > 1 %}<a href="{{ path('storefront_account', {page: orders.page - 1}) }}">← Назад</a>{% endif %}{% if orders.page * orders.page_size < orders.total %}<a href="{{ path('storefront_account', {page: orders.page + 1}) }}">Далі →</a>{% endif %}</nav>
+</section>
+{% endblock %}
