@@ -7,7 +7,7 @@
                 {% set alternate = product.attributes.image_hover|default('') %}
                 {% if photo starts with '/media/' %}
                     <img src="{{ photo }}" alt="{{ product.name }}" loading="lazy" width="600" height="760">
-                    {% if alternate starts with '/media/' %}<img class="alternate" src="{{ alternate }}" alt="{{ product.name }} — інший ракурс" loading="lazy" width="600" height="760">{% endif %}
+                    {% if alternate starts with '/media/' %}<img class="alternate" src="{{ alternate }}" alt="{{ product.name }} — на моделі" loading="lazy" width="600" height="760">{% endif %}
                 {% else %}<span class="image-placeholder"><span>L / {{ '%02d'|format(loop.index) }}</span><small>Фото готується</small></span>{% endif %}
             </div>
             <h3>{{ product.name }}</h3>

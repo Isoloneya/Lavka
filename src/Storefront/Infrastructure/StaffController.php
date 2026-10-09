@@ -76,7 +76,9 @@ final class StaffController extends AbstractController
         if (!isset(self::TABLES[$section])) {
             throw $this->createNotFoundException();
         }
-        $this->denyAccessUnlessGranted(match ($section) {'stock', 'warehouses' => 'INVENTORY_WRITE', 'prices', 'lists' => 'PRICING_WRITE', default => 'CATALOG_WRITE'});
+        $this->denyAccessUnlessGranted(match ($section) {
+            'stock', 'warehouses' => 'INVENTORY_WRITE', 'prices', 'lists' => 'PRICING_WRITE', default => 'CATALOG_WRITE',
+        });
         $edit = $request->query->getString('edit');
         $record = null;
         if ('' !== $edit && in_array($section, ['products', 'categories', 'variants'], true)) {
@@ -109,7 +111,7 @@ final class StaffController extends AbstractController
             }
         }
 
-        return $this->render('staff/manage.html.twig', ['section' => $section, 'rows' => $this->records->page(self::TABLES[$section], $this->page($request), 20), 'record' => $record, 'values' => $request->isMethod('POST') ? $request->request->all() : [], 'choices' => (object) ['categories' => $this->choices('category'), 'products' => $this->choices('product'), 'variants' => $this->choices('product_variant'), 'warehouses' => $this->choices('warehouse'), 'lists' => $this->choices('price_list')], 'error' => $error, 'csrf' => $this->shopping->csrf($request)], new Response(status: $status));
+        return $this->render('staff/manage.html.twig', ['section' => $section, 'rows' => $this->records->page(self::TABLES[$section], $this->page($request), 20), 'record' => $record, 'values' => $request->isMethod('POST') ? $request->request->all() : [], 'choices' => (object) ['categories' => $this->choices('category'), 'products' => $this->choices('product'), 'variants' => $this->choices('product_variant'), 'warehouses' => $this->choices('warehouse'), 'lists' => $this->choices('price_list'), 'groups' => $this->choices('customer_group')], 'error' => $error, 'csrf' => $this->shopping->csrf($request)], new Response(status: $status));
     }
 
     private function save(string $section, Request $request, ?string $id): void
@@ -135,7 +137,7 @@ final class StaffController extends AbstractController
             'variants' => $this->catalog->variant(new Input((object) ['sku' => $text('sku'), 'options' => $object('options'), 'is_active' => $form->getBoolean('is_active')]), $text('product_id'), $id),
             'warehouses' => $this->inventory->warehouse(new Input((object) ['code' => $text('code'), 'name' => $text('name')])),
             'stock' => $this->inventory->adjust($text('variant_id'), new Input((object) ['warehouse_id' => $text('warehouse_id'), 'delta' => $form->getInt('delta')])),
-            'lists' => $this->pricing->priceList(new Input((object) ['code' => $text('code'), 'currency' => 'UAH', 'priority' => $form->getInt('priority')])),
+            'lists' => $this->pricing->priceList(new Input((object) ['code' => $text('code'), 'currency' => 'UAH', 'priority' => $form->getInt('priority'), 'customer_group' => '' === $text('customer_group') ? null : $text('customer_group')])),
             'prices' => $this->pricing->prices($text('price_list_id'), new Input((object) ['prices' => [(object) ['variant_id' => $text('variant_id'), 'amount_minor' => $form->getInt('amount_minor'), 'min_quantity' => $form->getInt('min_quantity', 1)]]])),
             default => throw new \LogicException('Unsupported section.'),
         };
@@ -147,6 +149,7 @@ final class StaffController extends AbstractController
             $action();
             $changes = $request->request->all();
             unset($changes['_token']);
+            $changes['record_id'] = $request->query->getString('edit');
             $this->connection->insert('audit_log', ['id' => Uuid::v7()->toRfc4122(), 'actor_id' => $this->actor(), 'action' => 'POST', 'resource' => $request->getPathInfo(), 'changes' => json_encode($changes, JSON_THROW_ON_ERROR), 'created_at' => (new \DateTimeImmutable())->format(\DateTimeInterface::ATOM)]);
         });
     }
@@ -178,7 +181,7 @@ final class StaffController extends AbstractController
         do {
             $batch = $this->records->page($table, $page++, 100);
             array_push($result->items, ...$batch->items);
-        } while (count($result->items) < $batch->total);
+        } while ([] !== $batch->items && count($result->items) < $batch->total);
 
         return $result;
     }

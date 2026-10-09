@@ -1,0 +1,1132 @@
+[
+  {
+    "source_id": "46905",
+    "category": "jeans",
+    "code": "001",
+    "name": "Джинси 001 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Джинси 001 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "8635",
+    "category": "sunglasses",
+    "code": "002",
+    "name": "Окуляри 002 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Окуляри 002 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray minimal acetate sunglasses, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray minimal acetate sunglasses, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "36141",
+    "category": "sneakers",
+    "code": "003",
+    "name": "Кросівки 003 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Кросівки 003 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "17101",
+    "category": "wallets",
+    "code": "004",
+    "name": "Гаманець 004 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Гаманець 004 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray minimal folded leather wallet, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray minimal folded leather wallet, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Close view of model's hands holding this exact wallet, wallet clearly visible. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "5589",
+    "category": "sneakers",
+    "code": "005",
+    "name": "Кросівки 005 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Кросівки 005 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "47248",
+    "category": "casual-shoes",
+    "code": "006",
+    "name": "Черевики 006 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Черевики 006 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray minimal suede casual shoes, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38581",
+    "category": "tshirts",
+    "code": "007",
+    "name": "Футболка 007 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Футболка 007 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38629",
+    "category": "tshirts",
+    "code": "008",
+    "name": "Футболка 008 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Футболка 008 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "9176",
+    "category": "jeans",
+    "code": "009",
+    "name": "Джинси 009 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Джинси 009 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "16276",
+    "category": "sweatshirts",
+    "code": "010",
+    "name": "Світшот 010 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Світшот 010 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "39577",
+    "category": "heels",
+    "code": "011",
+    "name": "Туфлі 011 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Туфлі 011 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray elegant block heel shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray elegant block heel shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "29030",
+    "category": "caps",
+    "code": "012",
+    "name": "Кепка 012 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Кепка 012 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray plain cotton baseball cap, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "55616",
+    "category": "casual-shoes",
+    "code": "013",
+    "name": "Черевики 013 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Черевики 013 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory minimal suede casual shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "26808",
+    "category": "trousers",
+    "code": "014",
+    "name": "Штани 014 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Штани 014 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray tailored relaxed trousers, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray tailored relaxed trousers, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "35174",
+    "category": "backpacks",
+    "code": "015",
+    "name": "Рюкзак 015 — Графіт",
+    "color": "Графіт",
+    "gender": "Унісекс",
+    "description": "Рюкзак 015 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "4596",
+    "category": "backpacks",
+    "code": "016",
+    "name": "Рюкзак 016 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Рюкзак 016 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "18965",
+    "category": "sweatshirts",
+    "code": "017",
+    "name": "Світшот 017 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Світшот 017 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "53142",
+    "category": "heels",
+    "code": "018",
+    "name": "Туфлі 018 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Туфлі 018 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory elegant block heel shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory elegant block heel shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "19718",
+    "category": "shirts",
+    "code": "019",
+    "name": "Сорочка 019 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Сорочка 019 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray button-front long sleeve casual shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray button-front long sleeve casual shirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "6128",
+    "category": "tshirts",
+    "code": "020",
+    "name": "Футболка 020 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Футболка 020 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "25224",
+    "category": "backpacks",
+    "code": "021",
+    "name": "Рюкзак 021 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Рюкзак 021 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "11781",
+    "category": "tshirts",
+    "code": "022",
+    "name": "Футболка 022 — Олива",
+    "color": "Олива",
+    "gender": "Жінки",
+    "description": "Футболка 022 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "9976",
+    "category": "sweatshirts",
+    "code": "023",
+    "name": "Світшот 023 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Світшот 023 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "45865",
+    "category": "casual-shoes",
+    "code": "024",
+    "name": "Черевики 024 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Черевики 024 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black minimal suede casual shoes, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "28399",
+    "category": "sunglasses",
+    "code": "025",
+    "name": "Окуляри 025 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Окуляри 025 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory minimal acetate sunglasses, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory minimal acetate sunglasses, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "9483",
+    "category": "backpacks",
+    "code": "026",
+    "name": "Рюкзак 026 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Рюкзак 026 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "12534",
+    "category": "sweatshirts",
+    "code": "027",
+    "name": "Світшот 027 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Світшот 027 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "12708",
+    "category": "sneakers",
+    "code": "028",
+    "name": "Кросівки 028 — Чорний",
+    "color": "Чорний",
+    "gender": "Жінки",
+    "description": "Кросівки 028 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "5281",
+    "category": "tshirts",
+    "code": "029",
+    "name": "Футболка 029 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Футболка 029 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38430",
+    "category": "wallets",
+    "code": "030",
+    "name": "Гаманець 030 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Гаманець 030 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory minimal folded leather wallet, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory minimal folded leather wallet, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Close view of model's hands holding this exact wallet, wallet clearly visible. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "13106",
+    "category": "sweatshirts",
+    "code": "031",
+    "name": "Світшот 031 — Пісок",
+    "color": "Пісок",
+    "gender": "Жінки",
+    "description": "Світшот 031 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "39967",
+    "category": "casual-shoes",
+    "code": "032",
+    "name": "Черевики 032 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Черевики 032 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive minimal suede casual shoes, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "19612",
+    "category": "tshirts",
+    "code": "033",
+    "name": "Футболка 033 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Футболка 033 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "15027",
+    "category": "sweatshirts",
+    "code": "034",
+    "name": "Світшот 034 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Жінки",
+    "description": "Світшот 034 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "33630",
+    "category": "bags",
+    "code": "035",
+    "name": "Сумка 035 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Сумка 035 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "31335",
+    "category": "jeans",
+    "code": "036",
+    "name": "Джинси 036 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Джинси 036 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "14122",
+    "category": "jeans",
+    "code": "037",
+    "name": "Джинси 037 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Джинси 037 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "33385",
+    "category": "wallets",
+    "code": "038",
+    "name": "Гаманець 038 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Гаманець 038 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black minimal folded leather wallet, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black minimal folded leather wallet, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Close view of model's hands holding this exact wallet, wallet clearly visible. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "16548",
+    "category": "shirts",
+    "code": "039",
+    "name": "Сорочка 039 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Сорочка 039 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory button-front long sleeve casual shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory button-front long sleeve casual shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "34797",
+    "category": "caps",
+    "code": "040",
+    "name": "Кепка 040 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Кепка 040 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory plain cotton baseball cap, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "19436",
+    "category": "caps",
+    "code": "041",
+    "name": "Кепка 041 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Кепка 041 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black plain cotton baseball cap, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "11233",
+    "category": "jeans",
+    "code": "042",
+    "name": "Джинси 042 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Джинси 042 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38586",
+    "category": "tshirts",
+    "code": "043",
+    "name": "Футболка 043 — Бордо",
+    "color": "Бордо",
+    "gender": "Жінки",
+    "description": "Футболка 043 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "57252",
+    "category": "bags",
+    "code": "044",
+    "name": "Сумка 044 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Сумка 044 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38139",
+    "category": "backpacks",
+    "code": "045",
+    "name": "Рюкзак 045 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Рюкзак 045 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "16220",
+    "category": "jackets",
+    "code": "046",
+    "name": "Куртка 046 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Куртка 046 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray minimalist zip-front jacket, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray minimalist zip-front jacket, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "44764",
+    "category": "casual-shoes",
+    "code": "047",
+    "name": "Черевики 047 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Черевики 047 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige minimal suede casual shoes, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "22718",
+    "category": "sneakers",
+    "code": "048",
+    "name": "Кросівки 048 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Кросівки 048 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "39385",
+    "category": "jeans",
+    "code": "049",
+    "name": "Джинси 049 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Джинси 049 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "35755",
+    "category": "sneakers",
+    "code": "050",
+    "name": "Кросівки 050 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Кросівки 050 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "7733",
+    "category": "sneakers",
+    "code": "051",
+    "name": "Кросівки 051 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Кросівки 051 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "6885",
+    "category": "dresses",
+    "code": "052",
+    "name": "Сукня 052 — Графіт",
+    "color": "Графіт",
+    "gender": "Жінки",
+    "description": "Сукня 052 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: charcoal gray modest midi dress, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME charcoal gray modest midi dress, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "6856",
+    "category": "sneakers",
+    "code": "053",
+    "name": "Кросівки 053 — Бордо",
+    "color": "Бордо",
+    "gender": "Унісекс",
+    "description": "Кросівки 053 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "29728",
+    "category": "bags",
+    "code": "054",
+    "name": "Сумка 054 — Чорний",
+    "color": "Чорний",
+    "gender": "Жінки",
+    "description": "Сумка 054 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "19323",
+    "category": "sweatshirts",
+    "code": "055",
+    "name": "Світшот 055 — Бордо",
+    "color": "Бордо",
+    "gender": "Жінки",
+    "description": "Світшот 055 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "20251",
+    "category": "tshirts",
+    "code": "056",
+    "name": "Футболка 056 — Какао",
+    "color": "Какао",
+    "gender": "Унісекс",
+    "description": "Футболка 056 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "15927",
+    "category": "backpacks",
+    "code": "057",
+    "name": "Рюкзак 057 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Рюкзак 057 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "33606",
+    "category": "wallets",
+    "code": "058",
+    "name": "Гаманець 058 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Гаманець 058 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive minimal folded leather wallet, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive minimal folded leather wallet, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Close view of model's hands holding this exact wallet, wallet clearly visible. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "6604",
+    "category": "tshirts",
+    "code": "059",
+    "name": "Футболка 059 — Сірий",
+    "color": "Сірий",
+    "gender": "Унісекс",
+    "description": "Футболка 059 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: stone gray plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME stone gray plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "8843",
+    "category": "trousers",
+    "code": "060",
+    "name": "Штани 060 — Молочний",
+    "color": "Молочний",
+    "gender": "Унісекс",
+    "description": "Штани 060 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory tailored relaxed trousers, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory tailored relaxed trousers, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "24424",
+    "category": "sneakers",
+    "code": "061",
+    "name": "Кросівки 061 — Какао",
+    "color": "Какао",
+    "gender": "Жінки",
+    "description": "Кросівки 061 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "54889",
+    "category": "sweatshirts",
+    "code": "062",
+    "name": "Світшот 062 — Какао",
+    "color": "Какао",
+    "gender": "Унісекс",
+    "description": "Світшот 062 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "7093",
+    "category": "backpacks",
+    "code": "063",
+    "name": "Рюкзак 063 — Бордо",
+    "color": "Бордо",
+    "gender": "Унісекс",
+    "description": "Рюкзак 063 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "30594",
+    "category": "caps",
+    "code": "064",
+    "name": "Кепка 064 — Олива",
+    "color": "Олива",
+    "gender": "Жінки",
+    "description": "Кепка 064 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive plain cotton baseball cap, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "22275",
+    "category": "heels",
+    "code": "065",
+    "name": "Туфлі 065 — Чорний",
+    "color": "Чорний",
+    "gender": "Жінки",
+    "description": "Туфлі 065 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black elegant block heel shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black elegant block heel shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "8951",
+    "category": "trousers",
+    "code": "066",
+    "name": "Штани 066 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Штани 066 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black tailored relaxed trousers, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black tailored relaxed trousers, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "39661",
+    "category": "sneakers",
+    "code": "067",
+    "name": "Кросівки 067 — Сірий",
+    "color": "Сірий",
+    "gender": "Жінки",
+    "description": "Кросівки 067 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: stone gray unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME stone gray unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "43062",
+    "category": "tshirts",
+    "code": "068",
+    "name": "Футболка 068 — Блакитний",
+    "color": "Блакитний",
+    "gender": "Унісекс",
+    "description": "Футболка 068 у відтінку «Блакитний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: dusty blue plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME dusty blue plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "5205",
+    "category": "tshirts",
+    "code": "069",
+    "name": "Футболка 069 — Теракота",
+    "color": "Теракота",
+    "gender": "Унісекс",
+    "description": "Футболка 069 у відтінку «Теракота». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: terracotta plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME terracotta plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "24220",
+    "category": "caps",
+    "code": "070",
+    "name": "Кепка 070 — Пісок",
+    "color": "Пісок",
+    "gender": "Жінки",
+    "description": "Кепка 070 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige plain cotton baseball cap, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "54496",
+    "category": "bags",
+    "code": "071",
+    "name": "Сумка 071 — Олива",
+    "color": "Олива",
+    "gender": "Жінки",
+    "description": "Сумка 071 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "49790",
+    "category": "caps",
+    "code": "072",
+    "name": "Кепка 072 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Кепка 072 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue plain cotton baseball cap, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "13348",
+    "category": "jeans",
+    "code": "073",
+    "name": "Джинси 073 — Бордо",
+    "color": "Бордо",
+    "gender": "Унісекс",
+    "description": "Джинси 073 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "26140",
+    "category": "trousers",
+    "code": "074",
+    "name": "Штани 074 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Штани 074 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive tailored relaxed trousers, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive tailored relaxed trousers, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "4605",
+    "category": "backpacks",
+    "code": "075",
+    "name": "Рюкзак 075 — Какао",
+    "color": "Какао",
+    "gender": "Унісекс",
+    "description": "Рюкзак 075 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "22591",
+    "category": "sweatshirts",
+    "code": "076",
+    "name": "Світшот 076 — Сірий",
+    "color": "Сірий",
+    "gender": "Жінки",
+    "description": "Світшот 076 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: stone gray unbranded crewneck sweatshirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME stone gray unbranded crewneck sweatshirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "12705",
+    "category": "sneakers",
+    "code": "077",
+    "name": "Кросівки 077 — Блакитний",
+    "color": "Блакитний",
+    "gender": "Унісекс",
+    "description": "Кросівки 077 у відтінку «Блакитний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: dusty blue unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME dusty blue unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "44315",
+    "category": "trousers",
+    "code": "078",
+    "name": "Штани 078 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Штани 078 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige tailored relaxed trousers, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige tailored relaxed trousers, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "53435",
+    "category": "jackets",
+    "code": "079",
+    "name": "Куртка 079 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Куртка 079 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory minimalist zip-front jacket, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory minimalist zip-front jacket, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "51894",
+    "category": "wallets",
+    "code": "080",
+    "name": "Гаманець 080 — Пісок",
+    "color": "Пісок",
+    "gender": "Унісекс",
+    "description": "Гаманець 080 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige minimal folded leather wallet, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige minimal folded leather wallet, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Close view of model's hands holding this exact wallet, wallet clearly visible. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "39221",
+    "category": "dresses",
+    "code": "081",
+    "name": "Сукня 081 — Молочний",
+    "color": "Молочний",
+    "gender": "Жінки",
+    "description": "Сукня 081 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: ivory modest midi dress, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME ivory modest midi dress, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "43342",
+    "category": "sneakers",
+    "code": "082",
+    "name": "Кросівки 082 — Теракота",
+    "color": "Теракота",
+    "gender": "Жінки",
+    "description": "Кросівки 082 у відтінку «Теракота». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: terracotta unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME terracotta unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "26448",
+    "category": "sneakers",
+    "code": "083",
+    "name": "Кросівки 083 — Лісовий",
+    "color": "Лісовий",
+    "gender": "Унісекс",
+    "description": "Кросівки 083 у відтінку «Лісовий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: forest green unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME forest green unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "49604",
+    "category": "heels",
+    "code": "084",
+    "name": "Туфлі 084 — Олива",
+    "color": "Олива",
+    "gender": "Жінки",
+    "description": "Туфлі 084 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive elegant block heel shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive elegant block heel shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "15296",
+    "category": "bags",
+    "code": "085",
+    "name": "Сумка 085 — Пісок",
+    "color": "Пісок",
+    "gender": "Жінки",
+    "description": "Сумка 085 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "14033",
+    "category": "shirts",
+    "code": "086",
+    "name": "Сорочка 086 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Сорочка 086 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black button-front long sleeve casual shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black button-front long sleeve casual shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "3712",
+    "category": "tshirts",
+    "code": "087",
+    "name": "Футболка 087 — Лісовий",
+    "color": "Лісовий",
+    "gender": "Унісекс",
+    "description": "Футболка 087 у відтінку «Лісовий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: forest green plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME forest green plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "54407",
+    "category": "bags",
+    "code": "088",
+    "name": "Сумка 088 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Жінки",
+    "description": "Сумка 088 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "2511",
+    "category": "casual-shoes",
+    "code": "089",
+    "name": "Черевики 089 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Черевики 089 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue minimal suede casual shoes, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "48535",
+    "category": "caps",
+    "code": "090",
+    "name": "Кепка 090 — Бордо",
+    "color": "Бордо",
+    "gender": "Унісекс",
+    "description": "Кепка 090 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy plain cotton baseball cap, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "46909",
+    "category": "jeans",
+    "code": "091",
+    "name": "Джинси 091 — Какао",
+    "color": "Какао",
+    "gender": "Унісекс",
+    "description": "Джинси 091 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "26169",
+    "category": "trousers",
+    "code": "092",
+    "name": "Штани 092 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Штани 092 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue tailored relaxed trousers, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue tailored relaxed trousers, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "16764",
+    "category": "bags",
+    "code": "093",
+    "name": "Сумка 093 — Бордо",
+    "color": "Бордо",
+    "gender": "Жінки",
+    "description": "Сумка 093 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy minimal structured leather shoulder bag, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy minimal structured leather shoulder bag, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "5358",
+    "category": "sneakers",
+    "code": "094",
+    "name": "Кросівки 094 — Ліловий",
+    "color": "Ліловий",
+    "gender": "Жінки",
+    "description": "Кросівки 094 у відтінку «Ліловий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted lavender unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted lavender unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "22668",
+    "category": "backpacks",
+    "code": "095",
+    "name": "Рюкзак 095 — Сірий",
+    "color": "Сірий",
+    "gender": "Унісекс",
+    "description": "Рюкзак 095 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: stone gray minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME stone gray minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "22784",
+    "category": "jeans",
+    "code": "096",
+    "name": "Джинси 096 — Сірий",
+    "color": "Сірий",
+    "gender": "Унісекс",
+    "description": "Джинси 096 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: stone gray straight-leg denim jeans, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME stone gray straight-leg denim jeans, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Waist-to-shoes framing emphasizing trousers. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "44333",
+    "category": "shirts",
+    "code": "097",
+    "name": "Сорочка 097 — Олива",
+    "color": "Олива",
+    "gender": "Жінки",
+    "description": "Сорочка 097 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive button-front long sleeve casual shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive button-front long sleeve casual shirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38206",
+    "category": "sunglasses",
+    "code": "098",
+    "name": "Окуляри 098 — Чорний",
+    "color": "Чорний",
+    "gender": "Унісекс",
+    "description": "Окуляри 098 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black minimal acetate sunglasses, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black minimal acetate sunglasses, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "4487",
+    "category": "sneakers",
+    "code": "099",
+    "name": "Кросівки 099 — Білий",
+    "color": "Білий",
+    "gender": "Унісекс",
+    "description": "Кросівки 099 у відтінку «Білий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: off white unbranded minimalist sneakers with no stripes or logos, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME off white unbranded minimalist sneakers with no stripes or logos, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "18522",
+    "category": "jackets",
+    "code": "100",
+    "name": "Куртка 100 — Чорний",
+    "color": "Чорний",
+    "gender": "Жінки",
+    "description": "Куртка 100 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black minimalist zip-front jacket, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black minimalist zip-front jacket, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "7739",
+    "category": "caps",
+    "code": "101",
+    "name": "Кепка 101 — Какао",
+    "color": "Какао",
+    "gender": "Унісекс",
+    "description": "Кепка 101 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown plain cotton baseball cap, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "4756",
+    "category": "tshirts",
+    "code": "102",
+    "name": "Футболка 102 — Ліловий",
+    "color": "Ліловий",
+    "gender": "Унісекс",
+    "description": "Футболка 102 у відтінку «Ліловий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted lavender plain cotton crewneck T-shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted lavender plain cotton crewneck T-shirt, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "18316",
+    "category": "shirts",
+    "code": "103",
+    "name": "Сорочка 103 — Пісок",
+    "color": "Пісок",
+    "gender": "Жінки",
+    "description": "Сорочка 103 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige button-front long sleeve casual shirt, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige button-front long sleeve casual shirt, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "29875",
+    "category": "sunglasses",
+    "code": "104",
+    "name": "Окуляри 104 — Олива",
+    "color": "Олива",
+    "gender": "Унісекс",
+    "description": "Окуляри 104 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive minimal acetate sunglasses, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive minimal acetate sunglasses, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "39724",
+    "category": "dresses",
+    "code": "105",
+    "name": "Сукня 105 — Чорний",
+    "color": "Чорний",
+    "gender": "Жінки",
+    "description": "Сукня 105 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: black modest midi dress, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME black modest midi dress, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "4932",
+    "category": "dresses",
+    "code": "106",
+    "name": "Сукня 106 — Олива",
+    "color": "Олива",
+    "gender": "Жінки",
+    "description": "Сукня 106 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: muted olive modest midi dress, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME muted olive modest midi dress, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "54123",
+    "category": "heels",
+    "code": "107",
+    "name": "Туфлі 107 — Пісок",
+    "color": "Пісок",
+    "gender": "Жінки",
+    "description": "Туфлі 107 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: sand beige elegant block heel shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME sand beige elegant block heel shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "4117",
+    "category": "casual-shoes",
+    "code": "108",
+    "name": "Черевики 108 — Бордо",
+    "color": "Бордо",
+    "gender": "Унісекс",
+    "description": "Черевики 108 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: burgundy minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME burgundy minimal suede casual shoes, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "38303",
+    "category": "wallets",
+    "code": "109",
+    "name": "Гаманець 109 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Унісекс",
+    "description": "Гаманець 109 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue minimal folded leather wallet, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue minimal folded leather wallet, matching design, material and color, held or worn naturally by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Close view of model's hands holding this exact wallet, wallet clearly visible. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "13023",
+    "category": "heels",
+    "code": "110",
+    "name": "Туфлі 110 — Темно-синій",
+    "color": "Темно-синій",
+    "gender": "Жінки",
+    "description": "Туфлі 110 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: navy blue elegant block heel shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME navy blue elegant block heel shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "22635",
+    "category": "caps",
+    "code": "111",
+    "name": "Кепка 111 — Сірий",
+    "color": "Сірий",
+    "gender": "Унісекс",
+    "description": "Кепка 111 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: stone gray plain cotton baseball cap, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME stone gray plain cotton baseball cap, matching design, material and color, worn by a fictional adult male fashion model, professionally styled with simple neutral complementary clothing. Portrait framing clearly showing the accessory on the model. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "21570",
+    "category": "casual-shoes",
+    "code": "112",
+    "name": "Черевики 112 — Какао",
+    "color": "Какао",
+    "gender": "Жінки",
+    "description": "Черевики 112 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: cocoa brown minimal suede casual shoes, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME cocoa brown minimal suede casual shoes, matching design, material and color, worn by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Show lower legs and both feet wearing these exact shoes, focus on footwear. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  },
+  {
+    "source_id": "7097",
+    "category": "backpacks",
+    "code": "115",
+    "name": "Рюкзак 115 — Блакитний",
+    "color": "Блакитний",
+    "gender": "Жінки",
+    "description": "Рюкзак 115 у відтінку «Блакитний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+    "prompt": "Create one photorealistic e-commerce product diptych for fictional fashion brand Lavka. Wide 3:2 canvas divided into exactly TWO equal-width panels without gutter. No text, no letters, no logos, no brands, no watermarks. Soft light gray studio background, soft natural studio lighting. LEFT HALF: dusty blue minimal canvas backpack, standalone product only, no person, no body parts, entire item centered with generous margins, premium catalog photography. RIGHT HALF: exact SAME dusty blue minimal canvas backpack, matching design, material and color, held or worn naturally by a fictional adult female fashion model, professionally styled with simple neutral complementary clothing. Frame the full garment or accessory with model's head included. No real celebrities, no reference brands. Single coordinated pair of the SAME product. Original generic minimalist design."
+  }
+]
