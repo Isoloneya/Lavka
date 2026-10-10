@@ -2,8 +2,8 @@
 {% block body_class %}home{% endblock %}
 {% block content %}
     <section class="campaign" aria-label="Осіння колекція">
-        <video class="campaign-media" poster="{{ asset('storefront/media/campaign.png') }}" muted loop playsinline preload="none" {% if has_video %}data-campaign-video{% endif %}>
-            {% if has_video %}<source src="{{ asset('storefront/media/campaign.mp4') }}" type="video/mp4">{% endif %}
+        <video class="campaign-media" poster="{{ asset('storefront/media/campaign-generated.webp') }}" muted loop playsinline preload="none" {% if has_video %}data-campaign-video{% endif %}>
+            {% if has_video %}<source src="{{ asset('storefront/media/' ~ video_file) }}" type="{{ video_type }}">{% endif %}
         </video>
         <div class="campaign-copy"><h1>ОСІНЬ / 2026</h1><a class="button light" href="{{ path('storefront_catalog') }}">Дивитися колекцію</a><a class="scroll-down" href="#collections" aria-label="Перейти до колекцій">↓</a></div>
         {% if has_video %}<button class="video-control" data-video-control hidden>Відтворити відео</button>{% endif %}

@@ -20,9 +20,13 @@ final class StorefrontController extends AbstractController
     #[Route('/', name: 'storefront_home', methods: ['GET'])]
     public function home(CatalogQuery $catalog, KernelInterface $kernel): Response
     {
+        $videoFile = is_file($kernel->getProjectDir().'/public/storefront/media/campaign.mp4') ? 'campaign.mp4' : 'campaign.webm';
+
         return $this->render('storefront/home.html.twig', [
             'products' => $catalog->products(1, 6, '', null, 'created_at', 'UAH', $this->customerGroup(), null, null),
-            'has_video' => is_file($kernel->getProjectDir().'/public/storefront/media/campaign.mp4'),
+            'has_video' => is_file($kernel->getProjectDir().'/public/storefront/media/'.$videoFile),
+            'video_file' => $videoFile,
+            'video_type' => str_ends_with($videoFile, '.webm') ? 'video/webm' : 'video/mp4',
         ]);
     }
 

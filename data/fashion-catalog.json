@@ -1,0 +1,2474 @@
+{
+  "source": "Original fictional product photography generated with the built-in OpenAI image generation tool.",
+  "attribution": "Synthetic people and fictional unbranded products. Generation prompts: fashion-generation-plan.json. Original generated images retained outside the public web root. Cropped and compressed to WebP with explicit user approval.",
+  "categories": [
+    {
+      "slug": "tshirts",
+      "name": "Футболки"
+    },
+    {
+      "slug": "shirts",
+      "name": "Сорочки та поло"
+    },
+    {
+      "slug": "sweatshirts",
+      "name": "Світшоти та худі"
+    },
+    {
+      "slug": "jackets",
+      "name": "Куртки та жакети"
+    },
+    {
+      "slug": "jeans",
+      "name": "Джинси"
+    },
+    {
+      "slug": "trousers",
+      "name": "Штани"
+    },
+    {
+      "slug": "dresses",
+      "name": "Сукні"
+    },
+    {
+      "slug": "sneakers",
+      "name": "Спортивне взуття"
+    },
+    {
+      "slug": "casual-shoes",
+      "name": "Повсякденне взуття"
+    },
+    {
+      "slug": "heels",
+      "name": "Жіноче взуття"
+    },
+    {
+      "slug": "bags",
+      "name": "Сумки"
+    },
+    {
+      "slug": "backpacks",
+      "name": "Рюкзаки"
+    },
+    {
+      "slug": "caps",
+      "name": "Головні убори"
+    },
+    {
+      "slug": "sunglasses",
+      "name": "Сонцезахисні окуляри"
+    },
+    {
+      "slug": "wallets",
+      "name": "Гаманці"
+    }
+  ],
+  "products": [
+    {
+      "source_id": "46905",
+      "name": "Джинси 001 — Графіт",
+      "category": "jeans",
+      "description": "Джинси 001 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-001.webp",
+        "image_hover": "/media/generated-fashion/model-001.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 269000,
+      "stock": 17,
+      "sha256": "0de82e4448ba7c718659bcfb9b61cfb880bed848bbb0efc260cfb2583ae8ebcc",
+      "hover_sha256": "00c444dbf603ec9e566607a04ce6ae4c7b3b65ecd27c3e687e60082909f9c04b"
+    },
+    {
+      "source_id": "8635",
+      "name": "Окуляри 002 — Графіт",
+      "category": "sunglasses",
+      "description": "Окуляри 002 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-002.webp",
+        "image_hover": "/media/generated-fashion/model-002.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 139000,
+      "stock": 27,
+      "sha256": "7c90217f0b3af59566b684b81a7910a95bceebfcad8c61878db387b72b604b1c",
+      "hover_sha256": "7500e4f2a6618aea586d5aae64fb13a463c64ae37e545896fd4b98c52e5a978b"
+    },
+    {
+      "source_id": "36141",
+      "name": "Кросівки 003 — Графіт",
+      "category": "sneakers",
+      "description": "Кросівки 003 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-003.webp",
+        "image_hover": "/media/generated-fashion/model-003.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 299000,
+      "stock": 29,
+      "sha256": "82ad2ca5c677e8ccc5e1d3f222d44843c610a6e5118676de53e262029849cae1",
+      "hover_sha256": "5c95cb806182ee314a5b46fdf1563cc43d1a18e6e5939fe07c6265e7be191e4b"
+    },
+    {
+      "source_id": "17101",
+      "name": "Гаманець 004 — Графіт",
+      "category": "wallets",
+      "description": "Гаманець 004 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-004.webp",
+        "image_hover": "/media/generated-fashion/model-004.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 89000,
+      "stock": 21,
+      "sha256": "fe92e6e318a05490437b7a11f98406cede5b94f2330d3459280f4adb01f11e45",
+      "hover_sha256": "10d9f4b3cdfdd00fd3d24e6abd33289c2f5b4964a40bc101343ae65156ed7061"
+    },
+    {
+      "source_id": "5589",
+      "name": "Кросівки 005 — Молочний",
+      "category": "sneakers",
+      "description": "Кросівки 005 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-005.webp",
+        "image_hover": "/media/generated-fashion/model-005.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 329000,
+      "stock": 29,
+      "sha256": "553c76efa2597433272e622eccf008b27779e1659ee04007f68de2d05803290b",
+      "hover_sha256": "b02a9170055562cf1a47bf8dd2fa77aecb8a00cd869e3ba2d3bfd9e555450813"
+    },
+    {
+      "source_id": "47248",
+      "name": "Черевики 006 — Графіт",
+      "category": "casual-shoes",
+      "description": "Черевики 006 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-006.webp",
+        "image_hover": "/media/generated-fashion/model-006.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 299000,
+      "stock": 24,
+      "sha256": "798a3811d78a7ab6f6118faf4ca2bcabf2ace5dc0fdcaa1318f3942ab255855a",
+      "hover_sha256": "3a31a42447f8721f0ec1fac05825ad33157abdc3d2889989a29cedf5c3832022"
+    },
+    {
+      "source_id": "38581",
+      "name": "Футболка 007 — Графіт",
+      "category": "tshirts",
+      "description": "Футболка 007 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-007.webp",
+        "image_hover": "/media/generated-fashion/model-007.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 119000,
+      "stock": 21,
+      "sha256": "bc4fa1b2500f881a3bc8c77a6f1ddbce0e99e9b50627f7b13c6856482a90b01e",
+      "hover_sha256": "313cd723cb74704fd2d571b015ec35da9b797ba2341fe45f0a4ffd96301afaac"
+    },
+    {
+      "source_id": "38629",
+      "name": "Футболка 008 — Молочний",
+      "category": "tshirts",
+      "description": "Футболка 008 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-008.webp",
+        "image_hover": "/media/generated-fashion/model-008.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 109000,
+      "stock": 21,
+      "sha256": "37776ec49e9b72a7e8b248ec62b3c619d40ce7e8bc0a5c3420d3d9401b00d265",
+      "hover_sha256": "ed9b0b46bac7b22c563bc0dc836957ae95d64cc15e8a28c39f8d25b030bddd3e"
+    },
+    {
+      "source_id": "9176",
+      "name": "Джинси 009 — Молочний",
+      "category": "jeans",
+      "description": "Джинси 009 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-009.webp",
+        "image_hover": "/media/generated-fashion/model-009.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 279000,
+      "stock": 16,
+      "sha256": "cb5e1bdb840fe3f7c2561c31aba917efbb04170fb3a47e269c398f7abe5f589d",
+      "hover_sha256": "ca7b94bd268c4fc81ce07ae46260c17c91c6866a71d4c0acba484ce19c1543b7"
+    },
+    {
+      "source_id": "16276",
+      "name": "Світшот 010 — Графіт",
+      "category": "sweatshirts",
+      "description": "Світшот 010 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-010.webp",
+        "image_hover": "/media/generated-fashion/model-010.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 199000,
+      "stock": 12,
+      "sha256": "0dab0b7523be711bd244495b30c343964cd7605206cc9393a4f5ce0c296c5c06",
+      "hover_sha256": "3d4d824678abca785240801a81ece2ed233cadc029bc4f5d2d59a1c191a82e4c"
+    },
+    {
+      "source_id": "39577",
+      "name": "Туфлі 011 — Графіт",
+      "category": "heels",
+      "description": "Туфлі 011 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-011.webp",
+        "image_hover": "/media/generated-fashion/model-011.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "amount_minor": 289000,
+      "stock": 9,
+      "sha256": "d635a83b970e73aec234d8210887bd703a3df1647f2e00a0da02dc76dc1c75ae",
+      "hover_sha256": "65160ef254c368e68487cacd65f184eac78844e321bff0dff7cbf3dfd7b3819b"
+    },
+    {
+      "source_id": "29030",
+      "name": "Кепка 012 — Графіт",
+      "category": "caps",
+      "description": "Кепка 012 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-012.webp",
+        "image_hover": "/media/generated-fashion/model-012.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 69000,
+      "stock": 22,
+      "sha256": "92f92faae2a29aa50824e9e525fba1196c0d591edef405a48733a1542887a93f",
+      "hover_sha256": "3bb6e7cd8755ebb9fb8e44b055c2275cbcae24ad85e591be85fc0c8a8dabac9c"
+    },
+    {
+      "source_id": "55616",
+      "name": "Черевики 013 — Молочний",
+      "category": "casual-shoes",
+      "description": "Черевики 013 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-013.webp",
+        "image_hover": "/media/generated-fashion/model-013.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 259000,
+      "stock": 16,
+      "sha256": "37262fcb0568f88bd3973ddd6ce3c3dcf9f7aac7a9cc134b88bc73bae3a51359",
+      "hover_sha256": "de9959c7819e1539e0149614191b56f0b83dd772025825bfc6585174c7ee52a3"
+    },
+    {
+      "source_id": "26808",
+      "name": "Штани 014 — Графіт",
+      "category": "trousers",
+      "description": "Штани 014 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-014.webp",
+        "image_hover": "/media/generated-fashion/model-014.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 229000,
+      "stock": 8,
+      "sha256": "6f75f420b43d1ccb09e3e27c9b2875b9531c13d3244ddeec812b169af796cd78",
+      "hover_sha256": "192bcb969488d622d1e0a33dfde1f42682981078d546ba6ca6d72ba46bc08dd2"
+    },
+    {
+      "source_id": "35174",
+      "name": "Рюкзак 015 — Графіт",
+      "category": "backpacks",
+      "description": "Рюкзак 015 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-015.webp",
+        "image_hover": "/media/generated-fashion/model-015.webp",
+        "Колір": "Графіт",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 229000,
+      "stock": 22,
+      "sha256": "3561c42fa5328e374248963f13eb3238334af4c83a370585d96a108d69cbce9a",
+      "hover_sha256": "5f5c1a52fb1e813f051fdf59d65f818640864e21d10647d9bcc884066409191b"
+    },
+    {
+      "source_id": "4596",
+      "name": "Рюкзак 016 — Молочний",
+      "category": "backpacks",
+      "description": "Рюкзак 016 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-016.webp",
+        "image_hover": "/media/generated-fashion/model-016.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 209000,
+      "stock": 20,
+      "sha256": "ef376973a228583bef4dc4ebbbbb3124bb53ea667ffa759d584e97675f6219a3",
+      "hover_sha256": "3b15d21fbd62f5bf8b5c2b343cc9017a546df370c617becb4e91546bd40ad329"
+    },
+    {
+      "source_id": "18965",
+      "name": "Світшот 017 — Молочний",
+      "category": "sweatshirts",
+      "description": "Світшот 017 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-017.webp",
+        "image_hover": "/media/generated-fashion/model-017.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 209000,
+      "stock": 13,
+      "sha256": "65d67806fbb7c17a2077611830f4b32f3beaafc3d485e9849f9ca7eed9007f41",
+      "hover_sha256": "6ee4fa9ac0d5fa9cefc9b3b375ef03610b972ebf785df3ead0e7480867b4c456"
+    },
+    {
+      "source_id": "53142",
+      "name": "Туфлі 018 — Молочний",
+      "category": "heels",
+      "description": "Туфлі 018 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-018.webp",
+        "image_hover": "/media/generated-fashion/model-018.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "amount_minor": 279000,
+      "stock": 14,
+      "sha256": "a452485102572c61bc73ace3c3967a5d765434b4312c5e10cc76668a11b05c78",
+      "hover_sha256": "c2a2a6becd8c4d79e4d928836c8bc3f305b7d92bfe2985a07c9ee9b3327d7132"
+    },
+    {
+      "source_id": "19718",
+      "name": "Сорочка 019 — Графіт",
+      "category": "shirts",
+      "description": "Сорочка 019 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-019.webp",
+        "image_hover": "/media/generated-fashion/model-019.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 209000,
+      "stock": 22,
+      "sha256": "c33cf5ddd2d1b456ca2f32a12a0be76de3f18c715506a05e27a8f9f4ea14ad51",
+      "hover_sha256": "ea97332702732945a03812fee129a2191544ab9b3389b754b8d3be7952d757ca"
+    },
+    {
+      "source_id": "6128",
+      "name": "Футболка 020 — Чорний",
+      "category": "tshirts",
+      "description": "Футболка 020 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-020.webp",
+        "image_hover": "/media/generated-fashion/model-020.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 109000,
+      "stock": 16,
+      "sha256": "c16fd9e6bcb90ba810e76ed6c3a2a9dfd0f2496f920eb8e7118bc19767abe95e",
+      "hover_sha256": "fbcdeb026f1c46542838b78bf6473c47b4eb9ca6ff9b0263a2d07727e815aff3"
+    },
+    {
+      "source_id": "25224",
+      "name": "Рюкзак 021 — Чорний",
+      "category": "backpacks",
+      "description": "Рюкзак 021 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-021.webp",
+        "image_hover": "/media/generated-fashion/model-021.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 199000,
+      "stock": 8,
+      "sha256": "ceac6e450a71e84e9d9d5d425923bc11bcffbdcbfd448b654783e79c354c680b",
+      "hover_sha256": "11a31f273c690e9995273552dd7ab6a27bed4a79b24eee4e9208cbd70b0be869"
+    },
+    {
+      "source_id": "11781",
+      "name": "Футболка 022 — Олива",
+      "category": "tshirts",
+      "description": "Футболка 022 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-022.webp",
+        "image_hover": "/media/generated-fashion/model-022.webp",
+        "Колір": "Олива",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 79000,
+      "stock": 29,
+      "sha256": "c89a46731f4808f178a6d1c1ded8dc5a3ed58b2b21857c210a6b5a4b6c0ffd02",
+      "hover_sha256": "9b45576a2f856a3f956ee5a6fcb166a0af97a9243a978fe99862ce646eab8c29"
+    },
+    {
+      "source_id": "9976",
+      "name": "Світшот 023 — Чорний",
+      "category": "sweatshirts",
+      "description": "Світшот 023 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-023.webp",
+        "image_hover": "/media/generated-fashion/model-023.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 199000,
+      "stock": 24,
+      "sha256": "cd0dceadf24d90921c2407b35b92269ad9192ef32d974f529106572a34120920",
+      "hover_sha256": "c1fb941e3a7d86d3da755b91563a6c35938e40e02950cce9eca2bdbf299f7a6b"
+    },
+    {
+      "source_id": "45865",
+      "name": "Черевики 024 — Чорний",
+      "category": "casual-shoes",
+      "description": "Черевики 024 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-024.webp",
+        "image_hover": "/media/generated-fashion/model-024.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 259000,
+      "stock": 9,
+      "sha256": "b0c2a6eb03960533cd78f8c8b9b72361004cb927f9d53b955089975f4387f1c5",
+      "hover_sha256": "ee0b2b7407027d3166bd22e08d62adc7d169c06e2e5e14e4f4e19210d96b6683"
+    },
+    {
+      "source_id": "28399",
+      "name": "Окуляри 025 — Молочний",
+      "category": "sunglasses",
+      "description": "Окуляри 025 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-025.webp",
+        "image_hover": "/media/generated-fashion/model-025.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 15,
+      "sha256": "5bab77c231fc52b56237df685c6c6a3d408316d22cb60475959032ba5a078832",
+      "hover_sha256": "2fecc0c2fd28fc0010880b6dc6ddd6157dba29488b0f780124f1e1223993d230"
+    },
+    {
+      "source_id": "9483",
+      "name": "Рюкзак 026 — Олива",
+      "category": "backpacks",
+      "description": "Рюкзак 026 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-026.webp",
+        "image_hover": "/media/generated-fashion/model-026.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 219000,
+      "stock": 11,
+      "sha256": "9a499794e278280dca5e56f340ecc9f9deb5a67c1e26464e11eba41c3bbd0e20",
+      "hover_sha256": "ce15da597aacdd85c921ea90e32ba3d8cc2b134bef752a3376c2dd97c5e2fbc6"
+    },
+    {
+      "source_id": "12534",
+      "name": "Світшот 027 — Олива",
+      "category": "sweatshirts",
+      "description": "Світшот 027 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-027.webp",
+        "image_hover": "/media/generated-fashion/model-027.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 229000,
+      "stock": 14,
+      "sha256": "d63fc9cbc941cc18aebb3ac4968b2155010a2ca851c6e2acbd08945b2b2a5a88",
+      "hover_sha256": "dedb0a3e56f8d0143ea639abd4338d70d1fab70124d025d9b33d756679acef08"
+    },
+    {
+      "source_id": "12708",
+      "name": "Кросівки 028 — Чорний",
+      "category": "sneakers",
+      "description": "Кросівки 028 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-028.webp",
+        "image_hover": "/media/generated-fashion/model-028.webp",
+        "Колір": "Чорний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 329000,
+      "stock": 20,
+      "sha256": "b8f58bac7308353b02eadeb793318d5c56b24843054c67c99135e9e3d4a100df",
+      "hover_sha256": "6cc8b4f8d13e64bf95c219ee7f0308c2be26934ad7b19710639cc5dc3623698d"
+    },
+    {
+      "source_id": "5281",
+      "name": "Футболка 029 — Пісок",
+      "category": "tshirts",
+      "description": "Футболка 029 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-029.webp",
+        "image_hover": "/media/generated-fashion/model-029.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 109000,
+      "stock": 9,
+      "sha256": "7aa53c2259a8cfc273c5d9d7acf343b8d5cd3956d1fad0605c3fdc0ce153d65e",
+      "hover_sha256": "60610d7c8993ac64c41c3177d0a133e9cee3afb2e55bce44a44455b4b663394b"
+    },
+    {
+      "source_id": "38430",
+      "name": "Гаманець 030 — Молочний",
+      "category": "wallets",
+      "description": "Гаманець 030 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-030.webp",
+        "image_hover": "/media/generated-fashion/model-030.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 89000,
+      "stock": 14,
+      "sha256": "3a476eeff7c42150c23d82b57c2ee773096f8348a80c117d84040f5a7fb28b3d",
+      "hover_sha256": "7ed2dfcbd7c7f2aeadcc16c4c962ec06b9355d91b3dc4d3d1ad41fa90f638a3d"
+    },
+    {
+      "source_id": "13106",
+      "name": "Світшот 031 — Пісок",
+      "category": "sweatshirts",
+      "description": "Світшот 031 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-031.webp",
+        "image_hover": "/media/generated-fashion/model-031.webp",
+        "Колір": "Пісок",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 209000,
+      "stock": 10,
+      "sha256": "5836ccb91cffe021607298a4b82d78dca43144db98af384b10c392088240884c",
+      "hover_sha256": "05ab4b2f73cfb9157ab68e14d0db28c1861fba27fbd2094828f5c36138404cea"
+    },
+    {
+      "source_id": "39967",
+      "name": "Черевики 032 — Олива",
+      "category": "casual-shoes",
+      "description": "Черевики 032 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-032.webp",
+        "image_hover": "/media/generated-fashion/model-032.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 289000,
+      "stock": 15,
+      "sha256": "511cc2e2053436a6af1058e1c33be246d1737a9812279dac6b7cadcd91b91023",
+      "hover_sha256": "9a3c3964f89984a595c2936dd7cba730e49bc5ce52d967ca9be9d0d9aebddca5"
+    },
+    {
+      "source_id": "19612",
+      "name": "Футболка 033 — Темно-синій",
+      "category": "tshirts",
+      "description": "Футболка 033 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-033.webp",
+        "image_hover": "/media/generated-fashion/model-033.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 129000,
+      "stock": 12,
+      "sha256": "738cc0ddf9850031062c16c0446a50d69a421b06790d1c87a10f358502326b1f",
+      "hover_sha256": "3c323caee9aa77514bb9e59ab43ab6f10154277568f091582eceede49c70e478"
+    },
+    {
+      "source_id": "15027",
+      "name": "Світшот 034 — Темно-синій",
+      "category": "sweatshirts",
+      "description": "Світшот 034 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-034.webp",
+        "image_hover": "/media/generated-fashion/model-034.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 239000,
+      "stock": 11,
+      "sha256": "24a49ed042562765c691019ce0a1689a1d34d6748bc444595742ddfaea29c000",
+      "hover_sha256": "a9871f2d1c630c42981d56e0faa2a11cd1ea569a21ea7997f3103693d04b8450"
+    },
+    {
+      "source_id": "33630",
+      "name": "Сумка 035 — Графіт",
+      "category": "bags",
+      "description": "Сумка 035 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-035.webp",
+        "image_hover": "/media/generated-fashion/model-035.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 219000,
+      "stock": 14,
+      "sha256": "810066fda3aacec412e4a1b20d2d264cba865391586fe0820a194d657e51ec21",
+      "hover_sha256": "08212742908a49a5fb302c5a626b41ddf42af7ba099166a936f24e3535bde7d3"
+    },
+    {
+      "source_id": "31335",
+      "name": "Джинси 036 — Чорний",
+      "category": "jeans",
+      "description": "Джинси 036 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-036.webp",
+        "image_hover": "/media/generated-fashion/model-036.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 249000,
+      "stock": 23,
+      "sha256": "ecb77027fe3e62f7b80ed499922f450a12954c39d7f7f3b772ed99046c364434",
+      "hover_sha256": "1b2656b8928be83642edda310eac874e89a385e58da3ca72f3bc11a717a88406"
+    },
+    {
+      "source_id": "14122",
+      "name": "Джинси 037 — Олива",
+      "category": "jeans",
+      "description": "Джинси 037 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-037.webp",
+        "image_hover": "/media/generated-fashion/model-037.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 249000,
+      "stock": 18,
+      "sha256": "a3bd6438f7aa266113a4184721faf371eff580b4b71cbf3f5d1ca75bf88d8141",
+      "hover_sha256": "567cd75530ec0c15200c8f4d777e1ca9b30305be200897a1f5248c4d453b8b6b"
+    },
+    {
+      "source_id": "33385",
+      "name": "Гаманець 038 — Чорний",
+      "category": "wallets",
+      "description": "Гаманець 038 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-038.webp",
+        "image_hover": "/media/generated-fashion/model-038.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 109000,
+      "stock": 9,
+      "sha256": "5e7cf1df2cf3750bf3839b67910a9445962e1fa29eec64492a2e49795fbde96f",
+      "hover_sha256": "4fffd80a5b53d483c7bf789b1eeb0629b35bebc45528df1cd5d8447fa4f08fc2"
+    },
+    {
+      "source_id": "16548",
+      "name": "Сорочка 039 — Молочний",
+      "category": "shirts",
+      "description": "Сорочка 039 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-039.webp",
+        "image_hover": "/media/generated-fashion/model-039.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 149000,
+      "stock": 20,
+      "sha256": "dbf057384198240a7e9c496e1568360f469fae0593bd65c786201412751c081b",
+      "hover_sha256": "c6777b815643fcb851921d00d7837e9098ea2dd764761be1b38f736e895f880b"
+    },
+    {
+      "source_id": "34797",
+      "name": "Кепка 040 — Молочний",
+      "category": "caps",
+      "description": "Кепка 040 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-040.webp",
+        "image_hover": "/media/generated-fashion/model-040.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 59000,
+      "stock": 29,
+      "sha256": "e9fff3142b2a9b10c4ab28d067a5187067aaacf95d363ddfd79092538bd466e5",
+      "hover_sha256": "e4301a5b8d70dca087ed865db62f1da9a0a58ac64919392bb2ef8c16a6df9cc6"
+    },
+    {
+      "source_id": "19436",
+      "name": "Кепка 041 — Чорний",
+      "category": "caps",
+      "description": "Кепка 041 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-041.webp",
+        "image_hover": "/media/generated-fashion/model-041.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 28,
+      "sha256": "21c12bd1c24943be6779aa139a7cc0e56570f778bac69b1e4c114666c1134557",
+      "hover_sha256": "1b11e306d50c1701065c356eaa1e0753ab05b0ff6ea9b9c7720fd43779fa3a38"
+    },
+    {
+      "source_id": "11233",
+      "name": "Джинси 042 — Пісок",
+      "category": "jeans",
+      "description": "Джинси 042 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-042.webp",
+        "image_hover": "/media/generated-fashion/model-042.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 269000,
+      "stock": 9,
+      "sha256": "95b551a933208df2dd8bf2b3e5b0fcc1d1bd1f1aeb285a303333b89b92531396",
+      "hover_sha256": "a386f19766f2e4c64ae336c6c4859a930dace4ee32524651f389fd1b75915405"
+    },
+    {
+      "source_id": "38586",
+      "name": "Футболка 043 — Бордо",
+      "category": "tshirts",
+      "description": "Футболка 043 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-043.webp",
+        "image_hover": "/media/generated-fashion/model-043.webp",
+        "Колір": "Бордо",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 99000,
+      "stock": 26,
+      "sha256": "24274866cb187263c562f5c2302f3d5465bcbaf9108334f208360d02da7ae5e8",
+      "hover_sha256": "72ddb603ac6f6539acbc78487670e4dab34a772c00390554462bab94a35ca14c"
+    },
+    {
+      "source_id": "57252",
+      "name": "Сумка 044 — Молочний",
+      "category": "bags",
+      "description": "Сумка 044 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-044.webp",
+        "image_hover": "/media/generated-fashion/model-044.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 259000,
+      "stock": 20,
+      "sha256": "2709a59cb375ea8d08d9f7e12532f207f8a107a2441fcf788d25aba5367685a8",
+      "hover_sha256": "75a47403117ff0f756a48ec0c36acab4a66ea9486c446d6a2fc81c2856698325"
+    },
+    {
+      "source_id": "38139",
+      "name": "Рюкзак 045 — Пісок",
+      "category": "backpacks",
+      "description": "Рюкзак 045 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-045.webp",
+        "image_hover": "/media/generated-fashion/model-045.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 199000,
+      "stock": 11,
+      "sha256": "48afb25f11568968e16c09d3ab7bc89f4fbe9a02cfb9a4b58671ae16dc85a5a3",
+      "hover_sha256": "395bfe41bed3ed23d3fe050f49103f44766dc1cf261f667333ca17c20a2a05a6"
+    },
+    {
+      "source_id": "16220",
+      "name": "Куртка 046 — Графіт",
+      "category": "jackets",
+      "description": "Куртка 046 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-046.webp",
+        "image_hover": "/media/generated-fashion/model-046.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 339000,
+      "stock": 28,
+      "sha256": "d9eb5c35e6aa8bbeb6efcb0406ee968190f1bfafc7c1c3023397f10044727d8e",
+      "hover_sha256": "27ec8ab17abce5618dfa010a66ef002540eefabb9297abafc5c89f1368739d8d"
+    },
+    {
+      "source_id": "44764",
+      "name": "Черевики 047 — Пісок",
+      "category": "casual-shoes",
+      "description": "Черевики 047 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-047.webp",
+        "image_hover": "/media/generated-fashion/model-047.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 309000,
+      "stock": 12,
+      "sha256": "b0fb4dd7e0206d4cdea5a42860068358930869de9332b5293f95b4c300ac5247",
+      "hover_sha256": "3a44ee239a39f7038d19e58216cb93f6ab7bb8c483f5788574af35050088a1b6"
+    },
+    {
+      "source_id": "22718",
+      "name": "Кросівки 048 — Олива",
+      "category": "sneakers",
+      "description": "Кросівки 048 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-048.webp",
+        "image_hover": "/media/generated-fashion/model-048.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 329000,
+      "stock": 22,
+      "sha256": "4a8c0a0090863d9bb08c2e4199f572118ae3964c1be079a792b998aa62f88a52",
+      "hover_sha256": "d87092f251f989944ed311d6342e139713316cfeba79990f4f0d1d1c26c3b226"
+    },
+    {
+      "source_id": "39385",
+      "name": "Джинси 049 — Темно-синій",
+      "category": "jeans",
+      "description": "Джинси 049 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-049.webp",
+        "image_hover": "/media/generated-fashion/model-049.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 249000,
+      "stock": 9,
+      "sha256": "4fd663324515bbc83e1c7ed5d61cfaecf89453acb96ab0e66a75a4c9b5144fec",
+      "hover_sha256": "2f0d7c1d14dec117ebcd5a4725b74ff194e03703e5f44a8f4cab22eb82c6812b"
+    },
+    {
+      "source_id": "35755",
+      "name": "Кросівки 050 — Пісок",
+      "category": "sneakers",
+      "description": "Кросівки 050 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-050.webp",
+        "image_hover": "/media/generated-fashion/model-050.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 359000,
+      "stock": 27,
+      "sha256": "ed0909b32cef7706ae437218c0b7eced0d1e9e1306f8eb9cd5ec05d2d44754ff",
+      "hover_sha256": "bb7cafe6ceeb1a424cf4922681463038f56b464386c73ccd37553beab4f1c2d2"
+    },
+    {
+      "source_id": "7733",
+      "name": "Кросівки 051 — Темно-синій",
+      "category": "sneakers",
+      "description": "Кросівки 051 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-051.webp",
+        "image_hover": "/media/generated-fashion/model-051.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 349000,
+      "stock": 13,
+      "sha256": "4be69b93a37ccbd61ff2894ee26768e271fb4679fd1d03916ea4670ec386ac8a",
+      "hover_sha256": "89e56cb8ffc0364f0406007850eba354c646dbe94f7dd186b6788ba4459091c7"
+    },
+    {
+      "source_id": "6885",
+      "name": "Сукня 052 — Графіт",
+      "category": "dresses",
+      "description": "Сукня 052 у відтінку «Графіт». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-052.webp",
+        "image_hover": "/media/generated-fashion/model-052.webp",
+        "Колір": "Графіт",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 289000,
+      "stock": 29,
+      "sha256": "c70398d437f3f14cbf9d0a498455de1a369f51ed85481b9fca93ec42d67e8735",
+      "hover_sha256": "37e87bbc785bccec1b67248d3b897dd7e51665d0d58e8f0403170f0d502a376c"
+    },
+    {
+      "source_id": "6856",
+      "name": "Кросівки 053 — Бордо",
+      "category": "sneakers",
+      "description": "Кросівки 053 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-053.webp",
+        "image_hover": "/media/generated-fashion/model-053.webp",
+        "Колір": "Бордо",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 329000,
+      "stock": 24,
+      "sha256": "0984883a0845bda1ff80554d2bb6433977e0b8e40614820463727395895766b7",
+      "hover_sha256": "85a1de2f00a0220a04ca5a95727beac9e5d3703017b0ae23de6ada64f698ee4b"
+    },
+    {
+      "source_id": "29728",
+      "name": "Сумка 054 — Чорний",
+      "category": "bags",
+      "description": "Сумка 054 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-054.webp",
+        "image_hover": "/media/generated-fashion/model-054.webp",
+        "Колір": "Чорний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 259000,
+      "stock": 24,
+      "sha256": "d47161f2a79342dec8ca2480c29beaebca8f242165844e3cb7cc06759f8c6c9f",
+      "hover_sha256": "2cd1e3ba7df6939cec20f566776832bb0901a692b19ac98f299b6432e1378034"
+    },
+    {
+      "source_id": "19323",
+      "name": "Світшот 055 — Бордо",
+      "category": "sweatshirts",
+      "description": "Світшот 055 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-055.webp",
+        "image_hover": "/media/generated-fashion/model-055.webp",
+        "Колір": "Бордо",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 219000,
+      "stock": 11,
+      "sha256": "df470b6082ec14f80cd58dff2d7b1dde5855c881e45a05fe0ee695b35a9b3117",
+      "hover_sha256": "a86ed26f54f3ff8690459911f398aaf798a8867ff47b3cce78f5a33a4ead593f"
+    },
+    {
+      "source_id": "20251",
+      "name": "Футболка 056 — Какао",
+      "category": "tshirts",
+      "description": "Футболка 056 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-056.webp",
+        "image_hover": "/media/generated-fashion/model-056.webp",
+        "Колір": "Какао",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 79000,
+      "stock": 27,
+      "sha256": "cb5cb0aea7de4f57f3c75035e14399149b64dae6c04c3e729b7212d9fbe81412",
+      "hover_sha256": "782f2bc6efd13b61d3711894a76a625f879c0a6a20e6dccc794be4ba0163ae92"
+    },
+    {
+      "source_id": "15927",
+      "name": "Рюкзак 057 — Темно-синій",
+      "category": "backpacks",
+      "description": "Рюкзак 057 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-057.webp",
+        "image_hover": "/media/generated-fashion/model-057.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 189000,
+      "stock": 23,
+      "sha256": "5cd161bfcb90d98d6c1431900b27cd91699e3b215f41a38b67668ac04ea2e625",
+      "hover_sha256": "6df06e7c729ed9d95ccbeddde86b43ca15c4af3765c16f1a081709fc708d0107"
+    },
+    {
+      "source_id": "33606",
+      "name": "Гаманець 058 — Олива",
+      "category": "wallets",
+      "description": "Гаманець 058 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-058.webp",
+        "image_hover": "/media/generated-fashion/model-058.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 149000,
+      "stock": 14,
+      "sha256": "8393f107cb3ce04834c1aba3e812850fdf51601e8f449f45c57d63b6203ecffe",
+      "hover_sha256": "e10ad69a1f560f9ead0444a5f27aee7e7e8dc284fc9c8ce2f7b0c2333a927a54"
+    },
+    {
+      "source_id": "6604",
+      "name": "Футболка 059 — Сірий",
+      "category": "tshirts",
+      "description": "Футболка 059 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-059.webp",
+        "image_hover": "/media/generated-fashion/model-059.webp",
+        "Колір": "Сірий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 109000,
+      "stock": 12,
+      "sha256": "046fe4802e090910400ad71c6bf7262d9de7204ac4d88ee423d0d51899cf3270",
+      "hover_sha256": "0f1f57da341efe047566d32a16f642345236fcc5ece82e0722cbe5c174b7f90a"
+    },
+    {
+      "source_id": "8843",
+      "name": "Штани 060 — Молочний",
+      "category": "trousers",
+      "description": "Штани 060 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-060.webp",
+        "image_hover": "/media/generated-fashion/model-060.webp",
+        "Колір": "Молочний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 199000,
+      "stock": 19,
+      "sha256": "f33d3f6ab9d622e62ffca1e0e6ddcdec99d03d076771cf7f72a9beec8c935489",
+      "hover_sha256": "1a0abc13de9b84b6bc2e4230aea75e3fbc0384c23322d11e68855d18e77fce39"
+    },
+    {
+      "source_id": "24424",
+      "name": "Кросівки 061 — Какао",
+      "category": "sneakers",
+      "description": "Кросівки 061 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-061.webp",
+        "image_hover": "/media/generated-fashion/model-061.webp",
+        "Колір": "Какао",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 309000,
+      "stock": 24,
+      "sha256": "bf2308bc957bd1eae32c888e1dd488449513b09f13bcbec45bec74e3a93be90d",
+      "hover_sha256": "424e5aae56c579a8201c15a5c965e104202d1eb87509cd4f94c5c731276eeecd"
+    },
+    {
+      "source_id": "54889",
+      "name": "Світшот 062 — Какао",
+      "category": "sweatshirts",
+      "description": "Світшот 062 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-062.webp",
+        "image_hover": "/media/generated-fashion/model-062.webp",
+        "Колір": "Какао",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 209000,
+      "stock": 9,
+      "sha256": "d7d02fbeabe833293a033637625283cc14826ccaeb708730846c737fb1dc2c0b",
+      "hover_sha256": "257f0a12d1e0ce51c36ba85e9e7fbf94559e5c23dd0242646e58091973242dce"
+    },
+    {
+      "source_id": "7093",
+      "name": "Рюкзак 063 — Бордо",
+      "category": "backpacks",
+      "description": "Рюкзак 063 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-063.webp",
+        "image_hover": "/media/generated-fashion/model-063.webp",
+        "Колір": "Бордо",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 189000,
+      "stock": 21,
+      "sha256": "563703c5f3c74cc65d993e1a9afdbdfb6fc0f0c449fb18517456e6b8391fff76",
+      "hover_sha256": "3d7d07f0cbf599aef926db726bbbce773d4f0a91e0a6311cfc7f531cf3f259a9"
+    },
+    {
+      "source_id": "30594",
+      "name": "Кепка 064 — Олива",
+      "category": "caps",
+      "description": "Кепка 064 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-064.webp",
+        "image_hover": "/media/generated-fashion/model-064.webp",
+        "Колір": "Олива",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 26,
+      "sha256": "f427fa9fd4d43bf677faedd121cf039e78ff3f737dc18fef76ec158950b432da",
+      "hover_sha256": "c97b850e2c3b81998aeb196cbe7b7e59d763e6088d5d75b08afcc8f2b1a3bf5e"
+    },
+    {
+      "source_id": "22275",
+      "name": "Туфлі 065 — Чорний",
+      "category": "heels",
+      "description": "Туфлі 065 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-065.webp",
+        "image_hover": "/media/generated-fashion/model-065.webp",
+        "Колір": "Чорний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "amount_minor": 239000,
+      "stock": 11,
+      "sha256": "7fecb99e9d7ac24f0480ddcf27f16dbd055c59d8596fc4369d12447d8f92b2ef",
+      "hover_sha256": "b2acad3fe35735d112b76e1c800db49ba0b46247f42e067116ae585abfac0a56"
+    },
+    {
+      "source_id": "8951",
+      "name": "Штани 066 — Чорний",
+      "category": "trousers",
+      "description": "Штани 066 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-066.webp",
+        "image_hover": "/media/generated-fashion/model-066.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 229000,
+      "stock": 31,
+      "sha256": "4f26cefe116973754190d83e052fe1eb9db721e0713452a10d95ad020820d633",
+      "hover_sha256": "de912eefdf8781095f26786d6de88eecd7be178bf4c52f2d0c632aeb80ac983a"
+    },
+    {
+      "source_id": "39661",
+      "name": "Кросівки 067 — Сірий",
+      "category": "sneakers",
+      "description": "Кросівки 067 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-067.webp",
+        "image_hover": "/media/generated-fashion/model-067.webp",
+        "Колір": "Сірий",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 359000,
+      "stock": 21,
+      "sha256": "c4784ab22849125538a16fbd83d8bb7045cee2cb586786e12c5acd16270f5b64",
+      "hover_sha256": "d5142fa2fa879c10c4941d4ccea9a22ef097967fb544f1bbe77f2709b45972cc"
+    },
+    {
+      "source_id": "43062",
+      "name": "Футболка 068 — Блакитний",
+      "category": "tshirts",
+      "description": "Футболка 068 у відтінку «Блакитний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-068.webp",
+        "image_hover": "/media/generated-fashion/model-068.webp",
+        "Колір": "Блакитний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 129000,
+      "stock": 14,
+      "sha256": "64573fcb54b5e404c631793a0a7c8366dbb276ed9ff93c7d129b6bca274013be",
+      "hover_sha256": "60961589c2517b93c3625fffebae2d8a422f6cbc5eeb958ac03931eb86cf4e16"
+    },
+    {
+      "source_id": "5205",
+      "name": "Футболка 069 — Теракота",
+      "category": "tshirts",
+      "description": "Футболка 069 у відтінку «Теракота». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-069.webp",
+        "image_hover": "/media/generated-fashion/model-069.webp",
+        "Колір": "Теракота",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 119000,
+      "stock": 29,
+      "sha256": "9b1b90c8f772c121fd4fbddbc081241359d65f2e79ca57e6c89b7c381f55b34d",
+      "hover_sha256": "190fe991064bfc2b06e76bbe86b1eac97b0328d3da6cc8ed71fae085da4843a2"
+    },
+    {
+      "source_id": "24220",
+      "name": "Кепка 070 — Пісок",
+      "category": "caps",
+      "description": "Кепка 070 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-070.webp",
+        "image_hover": "/media/generated-fashion/model-070.webp",
+        "Колір": "Пісок",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 59000,
+      "stock": 12,
+      "sha256": "7e3f48716ee02f9b80839bd7070ba9aa8d8af2f1cbfe9cf5bf4c3e2ab7edc93d",
+      "hover_sha256": "e682108fc60fd5fc6ee20c04df42c21f8b49ab5458e1a75845683a9f03042fcd"
+    },
+    {
+      "source_id": "54496",
+      "name": "Сумка 071 — Олива",
+      "category": "bags",
+      "description": "Сумка 071 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-071.webp",
+        "image_hover": "/media/generated-fashion/model-071.webp",
+        "Колір": "Олива",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 209000,
+      "stock": 24,
+      "sha256": "3c77a67aaa36fcebb88524350cc085b04dd3f02142ed898ab785771971f6b67b",
+      "hover_sha256": "fe0592adf5f75fd6d5e2f126d191a8b68263340b59fe6a58ca34f6846b6d7f82"
+    },
+    {
+      "source_id": "49790",
+      "name": "Кепка 072 — Темно-синій",
+      "category": "caps",
+      "description": "Кепка 072 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-072.webp",
+        "image_hover": "/media/generated-fashion/model-072.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 119000,
+      "stock": 22,
+      "sha256": "be8271a0e679d7ffdfae537ca56f7a4325abe7cb8d8e2de63679ec586c87ba98",
+      "hover_sha256": "129e3b50b659f27bcd2899a3caaed9adba4ae69bcfe7436a2cc700c01e77d2e0"
+    },
+    {
+      "source_id": "13348",
+      "name": "Джинси 073 — Бордо",
+      "category": "jeans",
+      "description": "Джинси 073 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-073.webp",
+        "image_hover": "/media/generated-fashion/model-073.webp",
+        "Колір": "Бордо",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 279000,
+      "stock": 12,
+      "sha256": "073f101e6859f4333e386e4762a148dc5fde8d1a6b7da6a5f036b7c1ff0274f3",
+      "hover_sha256": "0441a93ab61290ae98cd4322e6de78e1b79da51f9a27e59d5f25fda64c72a85c"
+    },
+    {
+      "source_id": "26140",
+      "name": "Штани 074 — Олива",
+      "category": "trousers",
+      "description": "Штани 074 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-074.webp",
+        "image_hover": "/media/generated-fashion/model-074.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 199000,
+      "stock": 12,
+      "sha256": "a8af153fc24cb3b5675eb36acfdd5dec69dde8858c6f8e60ee07d5c79d1fdbb0",
+      "hover_sha256": "3048711faa28157c99ddf7b4401fea5b389e31735e5d6f217f96561dacfe3680"
+    },
+    {
+      "source_id": "4605",
+      "name": "Рюкзак 075 — Какао",
+      "category": "backpacks",
+      "description": "Рюкзак 075 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-075.webp",
+        "image_hover": "/media/generated-fashion/model-075.webp",
+        "Колір": "Какао",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 229000,
+      "stock": 29,
+      "sha256": "c13f6150abf429fb96c3ef906b4768bc9ed32ead73ce0e074d88c4ca26db0ea5",
+      "hover_sha256": "81d21da7a315562bbba645ee7b0134326ecbd4bb3c1043b1696ff654cc6e0110"
+    },
+    {
+      "source_id": "22591",
+      "name": "Світшот 076 — Сірий",
+      "category": "sweatshirts",
+      "description": "Світшот 076 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-076.webp",
+        "image_hover": "/media/generated-fashion/model-076.webp",
+        "Колір": "Сірий",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 209000,
+      "stock": 15,
+      "sha256": "76bec882db1f6c3012d4b3eed7608cca91c54cd367a55f6a414c716777d76629",
+      "hover_sha256": "9d598cb6419c10533317814f5892bc01e6e72cff24dff4b601b9bbbd5b1b2944"
+    },
+    {
+      "source_id": "12705",
+      "name": "Кросівки 077 — Блакитний",
+      "category": "sneakers",
+      "description": "Кросівки 077 у відтінку «Блакитний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-077.webp",
+        "image_hover": "/media/generated-fashion/model-077.webp",
+        "Колір": "Блакитний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 299000,
+      "stock": 17,
+      "sha256": "3095f4ed49a015d6ae1c65382030e4a52eeefd135351f49c1f858e2b8cc6c412",
+      "hover_sha256": "07f1395f1554655590eadf509a6fb873c743ee7f2eaa3f6dbf78dfcf92723ef2"
+    },
+    {
+      "source_id": "44315",
+      "name": "Штани 078 — Пісок",
+      "category": "trousers",
+      "description": "Штани 078 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-078.webp",
+        "image_hover": "/media/generated-fashion/model-078.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 229000,
+      "stock": 19,
+      "sha256": "58fa92d7774c1d15eb0af04be959f17501a66b4656c8f7bb8ff2d9bf4383bd96",
+      "hover_sha256": "cbcadb2057a24cd2d71322c9f32e83f07f85df9510108a1b8e3d4372437a7efa"
+    },
+    {
+      "source_id": "53435",
+      "name": "Куртка 079 — Молочний",
+      "category": "jackets",
+      "description": "Куртка 079 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-079.webp",
+        "image_hover": "/media/generated-fashion/model-079.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 369000,
+      "stock": 19,
+      "sha256": "e882fa9bb005bb147d107893cf94e6104e1e98efaa93b56bf5a0295647ec9400",
+      "hover_sha256": "d4d73d4b5ccc564ef7aaa709770ec714cb3b61ae7c6aef816c842b13706cb389"
+    },
+    {
+      "source_id": "51894",
+      "name": "Гаманець 080 — Пісок",
+      "category": "wallets",
+      "description": "Гаманець 080 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-080.webp",
+        "image_hover": "/media/generated-fashion/model-080.webp",
+        "Колір": "Пісок",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 119000,
+      "stock": 14,
+      "sha256": "7526666667562bbae40ebbb93fb101d20a6a905096235a9be828df653963245d",
+      "hover_sha256": "00480ff4bebf1b8ebc4b126fe003930092310fb7b6eba0979ae77f8c6302adac"
+    },
+    {
+      "source_id": "39221",
+      "name": "Сукня 081 — Молочний",
+      "category": "dresses",
+      "description": "Сукня 081 у відтінку «Молочний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-081.webp",
+        "image_hover": "/media/generated-fashion/model-081.webp",
+        "Колір": "Молочний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 249000,
+      "stock": 13,
+      "sha256": "621df7e56bee59b9106744aaee9ac8967ff1710b31f97757d8ab2256cbd9eae8",
+      "hover_sha256": "8f72fb749bbf88dfab4ca0643b1f56fff49e8b3664c1a1fc3a72dfda3e6d9ce5"
+    },
+    {
+      "source_id": "43342",
+      "name": "Кросівки 082 — Теракота",
+      "category": "sneakers",
+      "description": "Кросівки 082 у відтінку «Теракота». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-082.webp",
+        "image_hover": "/media/generated-fashion/model-082.webp",
+        "Колір": "Теракота",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 349000,
+      "stock": 30,
+      "sha256": "610299074331bed282b9acfe0180f0407c6420a91c71097f8004d151a20c6528",
+      "hover_sha256": "abdee38ff0acf64950171926d5d0fc1eba1fa22ecb33f1bfe57cc74e9ff32a05"
+    },
+    {
+      "source_id": "26448",
+      "name": "Кросівки 083 — Лісовий",
+      "category": "sneakers",
+      "description": "Кросівки 083 у відтінку «Лісовий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-083.webp",
+        "image_hover": "/media/generated-fashion/model-083.webp",
+        "Колір": "Лісовий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 319000,
+      "stock": 8,
+      "sha256": "61ee6c89c283b498f076b99fdea24f231a8966f212e1cabb52b67898235217ca",
+      "hover_sha256": "f32c5b765dbbd91a6dbed88c4bc021c85b4f955eec3df6d9b6857bd097a66d07"
+    },
+    {
+      "source_id": "49604",
+      "name": "Туфлі 084 — Олива",
+      "category": "heels",
+      "description": "Туфлі 084 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-084.webp",
+        "image_hover": "/media/generated-fashion/model-084.webp",
+        "Колір": "Олива",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "amount_minor": 249000,
+      "stock": 28,
+      "sha256": "bd3b2cdc3afb090d2415e2b61747c823715dcd16267aa0dd481f734ee90081d9",
+      "hover_sha256": "5b8d04a96a0ca8c9b0ed3bbeaa6451ae27975ab048d2a5fddaa76473e7123933"
+    },
+    {
+      "source_id": "15296",
+      "name": "Сумка 085 — Пісок",
+      "category": "bags",
+      "description": "Сумка 085 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-085.webp",
+        "image_hover": "/media/generated-fashion/model-085.webp",
+        "Колір": "Пісок",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 209000,
+      "stock": 16,
+      "sha256": "e5e18b37f94de51fda3eb5c1ba9e342b25396c21b931a62cb76724b097cfa9a0",
+      "hover_sha256": "d22f97ec4a8bd8bd121cd8256fc90e2ebbdb2bf5a782df058c9cf696a27b672d"
+    },
+    {
+      "source_id": "14033",
+      "name": "Сорочка 086 — Чорний",
+      "category": "shirts",
+      "description": "Сорочка 086 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-086.webp",
+        "image_hover": "/media/generated-fashion/model-086.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 199000,
+      "stock": 25,
+      "sha256": "f21dccda3ae2db282d16a3978d5c88a390febb389b97de773c3804a86050e6e5",
+      "hover_sha256": "ed629dca89203efedd3453cf0ba4ddc86dc78c163d681c53a77cd352c67b19c9"
+    },
+    {
+      "source_id": "3712",
+      "name": "Футболка 087 — Лісовий",
+      "category": "tshirts",
+      "description": "Футболка 087 у відтінку «Лісовий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-087.webp",
+        "image_hover": "/media/generated-fashion/model-087.webp",
+        "Колір": "Лісовий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 99000,
+      "stock": 24,
+      "sha256": "d7350c57d3d57fd77d5d51def654a616a09445776f60ee4cfc426cfa4cfda074",
+      "hover_sha256": "b44606d0a50a10928c7a53330f120a600f1ffe2bca6ba10e3ed818630c4ef518"
+    },
+    {
+      "source_id": "54407",
+      "name": "Сумка 088 — Темно-синій",
+      "category": "bags",
+      "description": "Сумка 088 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-088.webp",
+        "image_hover": "/media/generated-fashion/model-088.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 229000,
+      "stock": 31,
+      "sha256": "248163e630ea437c16e6550d4b09f7e1f49008f05a33366983248815ad651b6c",
+      "hover_sha256": "dbbc3301057459c1cf6695c1498e404ade463de9d9c057626916c8d5aab2fe30"
+    },
+    {
+      "source_id": "2511",
+      "name": "Черевики 089 — Темно-синій",
+      "category": "casual-shoes",
+      "description": "Черевики 089 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-089.webp",
+        "image_hover": "/media/generated-fashion/model-089.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 299000,
+      "stock": 23,
+      "sha256": "d8c788a994ac74f5eb3a89d2f699c1942babfaaef69e1c9a02be10e058ec5fc0",
+      "hover_sha256": "238efb9bb321c8111fe974438c803a0c57d2256727ab53af99d2e760e9ae47f2"
+    },
+    {
+      "source_id": "48535",
+      "name": "Кепка 090 — Бордо",
+      "category": "caps",
+      "description": "Кепка 090 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-090.webp",
+        "image_hover": "/media/generated-fashion/model-090.webp",
+        "Колір": "Бордо",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 15,
+      "sha256": "f42c99079ef4a6ab401ebde3cedba22f7958f9350217d9c2a2fb6956404fd8ce",
+      "hover_sha256": "721e839c16a3ed2746a829bf0214320867c8796a4e05ddf57ff8e7c8ea4aa493"
+    },
+    {
+      "source_id": "46909",
+      "name": "Джинси 091 — Какао",
+      "category": "jeans",
+      "description": "Джинси 091 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-091.webp",
+        "image_hover": "/media/generated-fashion/model-091.webp",
+        "Колір": "Какао",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 239000,
+      "stock": 21,
+      "sha256": "ac3baec846fd6738bde6cca7664f800f261471a12087ad271c951a9bf9918d5f",
+      "hover_sha256": "67d94e6cd09571ed9d395093b8b79a1f59673338bfc1fb11510c7ef98bd14c2a"
+    },
+    {
+      "source_id": "26169",
+      "name": "Штани 092 — Темно-синій",
+      "category": "trousers",
+      "description": "Штани 092 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-092.webp",
+        "image_hover": "/media/generated-fashion/model-092.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 209000,
+      "stock": 17,
+      "sha256": "b6f97bfd65ea64bea2f797f3a8cc16b9f84bb849a2729e20db39ac2cc3a86fa1",
+      "hover_sha256": "5adc478606a26f7b10a599cb5bb8064b08fcc4d44731d31b197c34ab76cedfc7"
+    },
+    {
+      "source_id": "16764",
+      "name": "Сумка 093 — Бордо",
+      "category": "bags",
+      "description": "Сумка 093 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-093.webp",
+        "image_hover": "/media/generated-fashion/model-093.webp",
+        "Колір": "Бордо",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 259000,
+      "stock": 20,
+      "sha256": "6d14984bbd6548e40a3260771f7a478340d900600bb5dc161a17f08f288ae341",
+      "hover_sha256": "c393d7769c7285e64164fb50ea327dfce9e975f749bc6855cc31a0f82871c5f5"
+    },
+    {
+      "source_id": "5358",
+      "name": "Кросівки 094 — Ліловий",
+      "category": "sneakers",
+      "description": "Кросівки 094 у відтінку «Ліловий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-094.webp",
+        "image_hover": "/media/generated-fashion/model-094.webp",
+        "Колір": "Ліловий",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 329000,
+      "stock": 14,
+      "sha256": "88beb0d13f6b1d01308fd535b6ab3ebeda5a203936a05c046d5b2ee3118a58cb",
+      "hover_sha256": "c3153284333bca67f51acb591d9da9123d65722a16c71be4e4b255cbe43ac734"
+    },
+    {
+      "source_id": "22668",
+      "name": "Рюкзак 095 — Сірий",
+      "category": "backpacks",
+      "description": "Рюкзак 095 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-095.webp",
+        "image_hover": "/media/generated-fashion/model-095.webp",
+        "Колір": "Сірий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 189000,
+      "stock": 20,
+      "sha256": "fef32ecefe3768e6348885d6ef90682ba0fbba3aa5c9e48442ca757f06059038",
+      "hover_sha256": "895f382837448cef7fad4f658b205c190052334e5683530bc636fc411d263c0c"
+    },
+    {
+      "source_id": "22784",
+      "name": "Джинси 096 — Сірий",
+      "category": "jeans",
+      "description": "Джинси 096 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-096.webp",
+        "image_hover": "/media/generated-fashion/model-096.webp",
+        "Колір": "Сірий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "28",
+        "30",
+        "32",
+        "34"
+      ],
+      "amount_minor": 279000,
+      "stock": 16,
+      "sha256": "912e71d13931106d9c6338c6f33cf75d47141bfe92351410b7ac81ec4dacd51e",
+      "hover_sha256": "c1f50cf6634ca3dbef24b1b185d822e658f5cef7f2c4ee1b8f421b448b273003"
+    },
+    {
+      "source_id": "44333",
+      "name": "Сорочка 097 — Олива",
+      "category": "shirts",
+      "description": "Сорочка 097 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-097.webp",
+        "image_hover": "/media/generated-fashion/model-097.webp",
+        "Колір": "Олива",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 169000,
+      "stock": 13,
+      "sha256": "2b62f32caac9619bfc7b32037dd0960f5b37952f1800e0fe75ad06a1049013de",
+      "hover_sha256": "ecc7ab308d8b383aacc6e18f455635455f8bcec2d0bafdbaa765363eb30ced55"
+    },
+    {
+      "source_id": "38206",
+      "name": "Окуляри 098 — Чорний",
+      "category": "sunglasses",
+      "description": "Окуляри 098 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-098.webp",
+        "image_hover": "/media/generated-fashion/model-098.webp",
+        "Колір": "Чорний",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 30,
+      "sha256": "f18ab49d6b962f9a7324273c38d4bd00125bccc959564ec939dd2d127302b41b",
+      "hover_sha256": "711f08f999dc4483dcd0c155c5a72fea2685972ea30faa4a1c66b32f2e519d09"
+    },
+    {
+      "source_id": "4487",
+      "name": "Кросівки 099 — Білий",
+      "category": "sneakers",
+      "description": "Кросівки 099 у відтінку «Білий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-099.webp",
+        "image_hover": "/media/generated-fashion/model-099.webp",
+        "Колір": "Білий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 299000,
+      "stock": 31,
+      "sha256": "70b74a98a98bdc24b63c0401f1cb789817c03bc71de320811cbc5d90ff0749e1",
+      "hover_sha256": "8be8947de1d0c2246a1fbcbbfc2f3fa5124d36e85360491895337f9c223f8e3a"
+    },
+    {
+      "source_id": "18522",
+      "name": "Куртка 100 — Чорний",
+      "category": "jackets",
+      "description": "Куртка 100 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-100.webp",
+        "image_hover": "/media/generated-fashion/model-100.webp",
+        "Колір": "Чорний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 329000,
+      "stock": 26,
+      "sha256": "e4c73fd57685def61760ab5e0d3e23a360bed2f61320eb7ed1cf58cb753d0566",
+      "hover_sha256": "b7f171e8c34808eee9b8b938310deeefc201fcf3aeba2dbbff77242a4a774085"
+    },
+    {
+      "source_id": "7739",
+      "name": "Кепка 101 — Какао",
+      "category": "caps",
+      "description": "Кепка 101 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-101.webp",
+        "image_hover": "/media/generated-fashion/model-101.webp",
+        "Колір": "Какао",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 19,
+      "sha256": "a60799ac4a4f5057c6d93322f5481b5141b92f91934cdaba48d0848734ebfbf2",
+      "hover_sha256": "6e7f9f805186c2e1f7a1e8874c200d84834a7b89f58d30333791c5be781b8734"
+    },
+    {
+      "source_id": "4756",
+      "name": "Футболка 102 — Ліловий",
+      "category": "tshirts",
+      "description": "Футболка 102 у відтінку «Ліловий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-102.webp",
+        "image_hover": "/media/generated-fashion/model-102.webp",
+        "Колір": "Ліловий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 109000,
+      "stock": 12,
+      "sha256": "7da1d87ce53adf856c17979618185cb82c2bd9b5069be300a02749bce5aa73bd",
+      "hover_sha256": "be2fcc605777c6348b2a8a7dbb27ad6aff0e0fe4cd904f7271f8f68abf8564b2"
+    },
+    {
+      "source_id": "18316",
+      "name": "Сорочка 103 — Пісок",
+      "category": "shirts",
+      "description": "Сорочка 103 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-103.webp",
+        "image_hover": "/media/generated-fashion/model-103.webp",
+        "Колір": "Пісок",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 189000,
+      "stock": 12,
+      "sha256": "584b9cd965ba363a50a43f714749ad1c88f6d0e19646eac5eb25f0b2dd7dc6a7",
+      "hover_sha256": "7ddad6db418d305d6bb6c0a3504cd223cddbc686258b89fa53b8df17ea8415bc"
+    },
+    {
+      "source_id": "29875",
+      "name": "Окуляри 104 — Олива",
+      "category": "sunglasses",
+      "description": "Окуляри 104 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-104.webp",
+        "image_hover": "/media/generated-fashion/model-104.webp",
+        "Колір": "Олива",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 159000,
+      "stock": 27,
+      "sha256": "bcccf5404eb3a7b058c674f76f57031b3eeb1c8639b810ba3d9dc5124c6a9b50",
+      "hover_sha256": "ce37d6a078ee5e5322598732d80ac2e636cbf2f21d17d43ee35183b799f46a28"
+    },
+    {
+      "source_id": "39724",
+      "name": "Сукня 105 — Чорний",
+      "category": "dresses",
+      "description": "Сукня 105 у відтінку «Чорний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-105.webp",
+        "image_hover": "/media/generated-fashion/model-105.webp",
+        "Колір": "Чорний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "amount_minor": 309000,
+      "stock": 12,
+      "sha256": "6e06e6322bd3b4340b812b8d19b3386f0eb0ec0b4c05bc2fa701b953785ba350",
+      "hover_sha256": "11ed6cbc6806f1d838c005342e7cde6ecfff9435f234eb093f11795c8917b76e"
+    },
+    {
+      "source_id": "4932",
+      "name": "Сукня 106 — Олива",
+      "category": "dresses",
+      "description": "Сукня 106 у відтінку «Олива». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-106.webp",
+        "image_hover": "/media/generated-fashion/model-106.webp",
+        "Колір": "Олива",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ],
+      "amount_minor": 289000,
+      "stock": 20,
+      "sha256": "b456e71fccf6f366f3227b68ac7f945a0d233e21e5ff2678e1276a3442faf275",
+      "hover_sha256": "3c66a16ec0cdf72fca883e4542982713a27c9f4daf20c1cca4783bf7f97e217d"
+    },
+    {
+      "source_id": "54123",
+      "name": "Туфлі 107 — Пісок",
+      "category": "heels",
+      "description": "Туфлі 107 у відтінку «Пісок». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-107.webp",
+        "image_hover": "/media/generated-fashion/model-107.webp",
+        "Колір": "Пісок",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "amount_minor": 289000,
+      "stock": 11,
+      "sha256": "b71cc4c9906017e0895aa0e5f62df66ff05b010bae2933fe3add10e1029d5635",
+      "hover_sha256": "46d55901ed7d7d4797d6b69ae4e09aa8b5655dc7ed03cb35d72ca416ec85a726"
+    },
+    {
+      "source_id": "4117",
+      "name": "Черевики 108 — Бордо",
+      "category": "casual-shoes",
+      "description": "Черевики 108 у відтінку «Бордо». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-108.webp",
+        "image_hover": "/media/generated-fashion/model-108.webp",
+        "Колір": "Бордо",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 259000,
+      "stock": 21,
+      "sha256": "81d808deb5cbbc513fcf4e74ca4e5af4677fceafb2c3d45e8be6ee00646c741c",
+      "hover_sha256": "96252bfb006efcb238359348c6d785ed60e944013395888a068509159c17469c"
+    },
+    {
+      "source_id": "38303",
+      "name": "Гаманець 109 — Темно-синій",
+      "category": "wallets",
+      "description": "Гаманець 109 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-109.webp",
+        "image_hover": "/media/generated-fashion/model-109.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 149000,
+      "stock": 31,
+      "sha256": "885c9c09fb135ff61d0912a5191cb0dd4e4277cda6ff1c5fd135567e46ff3098",
+      "hover_sha256": "b581bfc99d04305f99042ac96ada67578191a5f17d20f4566629fc57a474e7df"
+    },
+    {
+      "source_id": "13023",
+      "name": "Туфлі 110 — Темно-синій",
+      "category": "heels",
+      "description": "Туфлі 110 у відтінку «Темно-синій». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-110.webp",
+        "image_hover": "/media/generated-fashion/model-110.webp",
+        "Колір": "Темно-синій",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "amount_minor": 259000,
+      "stock": 23,
+      "sha256": "d37934e5a5789a4934a96244eeb53c9b9cad1634a626867f396a23fd87c2bfae",
+      "hover_sha256": "1eaec63de386f44d699ba9923cb4db9d5bc22164dec9a6f63cc189c1b1e2094a"
+    },
+    {
+      "source_id": "22635",
+      "name": "Кепка 111 — Сірий",
+      "category": "caps",
+      "description": "Кепка 111 у відтінку «Сірий». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-111.webp",
+        "image_hover": "/media/generated-fashion/model-111.webp",
+        "Колір": "Сірий",
+        "Для кого": "Унісекс"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 99000,
+      "stock": 11,
+      "sha256": "a477387371cd0edf525f8ecbf8074d9f1a574a0cf475216183196eb42ae724aa",
+      "hover_sha256": "74d86c17e17524954a959f7007b4778bda9edf713e8d6ef7bb548a82503c7d4f"
+    },
+    {
+      "source_id": "21570",
+      "name": "Черевики 112 — Какао",
+      "category": "casual-shoes",
+      "description": "Черевики 112 у відтінку «Какао». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-112.webp",
+        "image_hover": "/media/generated-fashion/model-112.webp",
+        "Колір": "Какао",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44"
+      ],
+      "amount_minor": 279000,
+      "stock": 26,
+      "sha256": "67c5de09e18830d9fd6b49bf641c484551a34f84bf99262408cd7c596de9b372",
+      "hover_sha256": "93eb82a9cb9b0981049ee85e2ac067307d1d91351be0fa2b02082cf6e623b44c"
+    },
+    {
+      "source_id": "7097",
+      "name": "Рюкзак 115 — Блакитний",
+      "category": "backpacks",
+      "description": "Рюкзак 115 у відтінку «Блакитний». Вигаданий товар демонстраційної колекції Lavka. Предметне фото та образ на моделі створені за допомогою ШІ.",
+      "attributes": {
+        "image": "/media/generated-fashion/item-115.webp",
+        "image_hover": "/media/generated-fashion/model-115.webp",
+        "Колір": "Блакитний",
+        "Для кого": "Жінки"
+      },
+      "sizes": [
+        "ONE"
+      ],
+      "amount_minor": 229000,
+      "stock": 25,
+      "sha256": "7efb6605d1120934793f0810bb5f23c6b8b6675ec6afb0cb8619fb2c014947c7",
+      "hover_sha256": "ba17f55108fb4bf4a231522dac595876decb6f8d89ad073afea17d5f5194b5e3"
+    }
+  ]
+}

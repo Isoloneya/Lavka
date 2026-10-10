@@ -1,0 +1,28 @@
+{% extends 'staff/base.html.twig' %}
+{% block staff_content %}
+<h1>Акції та купони</h1>{% if error %}<p class="notice error" role="alert">{{ error }}</p>{% endif %}
+{% set editing = values.operation|default('') != 'check' %}
+{% set form = editing ? values : {} %}
+<details class="staff-editor" {% if record or error or rows.total == 0 %}open{% endif %}><summary>{{ record ? 'Редагувати акцію' : 'Нова акція' }}</summary>
+<form method="post" class="staff-form"><input type="hidden" name="_token" value="{{ csrf }}">
+<label>Назва<input name="name" value="{{ form.name is defined ? form.name : record.name|default('') }}" maxlength="255" required></label>
+<label>Код купона (необов’язково)<input name="coupon_code" value="{{ form.coupon_code is defined ? form.coupon_code : record.coupon_code|default('') }}" maxlength="64"></label>
+<label>Рівень<select name="scope">{% for value,label in {'cart':'Кошик','item':'Товар'} %}<option value="{{ value }}" {% if form.scope|default(record.scope|default('cart')) == value %}selected{% endif %}>{{ label }}</option>{% endfor %}</select></label>
+<label>Пріоритет<input name="priority" type="number" min="-100000" max="100000" value="{{ form.priority is defined ? form.priority : record.priority|default(0) }}" required></label>
+{% set active = form.is_active is defined ? form.is_active : (record.is_active is defined ? record.is_active : true) %}
+<label>Стан<select name="is_active"><option value="1" {% if active %}selected{% endif %}>Активна</option><option value="0" {% if not active %}selected{% endif %}>Вимкнена</option></select></label>
+{% set stop = form.stop_processing is defined ? form.stop_processing : record.stop_processing|default(false) %}
+<label>Після застосування<select name="stop_processing"><option value="0" {% if not stop %}selected{% endif %}>Перевіряти наступні правила</option><option value="1" {% if stop %}selected{% endif %}>Зупинити обробку</option></select></label>
+<label>Діє з (Київ)<input type="datetime-local" name="valid_from" value="{{ form.valid_from is defined ? form.valid_from : (record.valid_from|default(null) ? record.valid_from|date('Y-m-d\\TH:i','Europe/Kyiv') : '') }}"></label>
+<label>Діє до (Київ)<input type="datetime-local" name="valid_to" value="{{ form.valid_to is defined ? form.valid_to : (record.valid_to|default(null) ? record.valid_to|date('Y-m-d\\TH:i','Europe/Kyiv') : '') }}"></label>
+<label class="wide">Умови (JSON)<textarea name="conditions" rows="4" required>{{ form.conditions is defined ? form.conditions : record.conditions|default({all:[]})|json_encode }}</textarea></label>
+<label class="wide">Дії (JSON)<textarea name="actions" rows="4" required>{{ form.actions is defined ? form.actions : record.actions|default([{type:'percent_discount',target:'cart',value:10}])|json_encode }}</textarea></label>
+<p class="wide price-note">Порожній список all застосовує правило до всіх покупок. target у дії має відповідати рівню item або cart; value — відсоток знижки від 0 до 100.</p>
+<div class="wide staff-actions"><button class="button filled" name="operation" value="save">Зберегти акцію</button>{% if record %}<a class="button" href="{{ path('staff_promotions') }}">Нова акція</a>{% endif %}</div>
+</form></details>
+<div class="staff-table"><table><thead><tr><th>Назва</th><th>Купон</th><th>Стан</th><th>Пріоритет</th><th></th></tr></thead><tbody>{% for row in rows.items %}<tr><td>{{ row.name }}</td><td>{{ row.coupon_code|default('Без купона') }}</td><td>{{ row.is_active ? 'Активна' : 'Вимкнена' }}</td><td>{{ row.priority }}</td><td><a href="{{ path('staff_promotions',{edit:row.id}) }}">Редагувати ↗</a></td></tr>{% else %}<tr><td colspan="5">Акцій поки немає.</td></tr>{% endfor %}</tbody></table></div>
+{% include 'staff/_pagination.html.twig' with {route:'staff_promotions',parameters:{}} %}
+<h2>Перевірити чинні акції</h2><p>Розрахунок для одного SKU за загальним прайсом UAH з усіма збереженими правилами. Незбережені зміни редактора не враховуються.</p>
+<form method="post" action="{{ path('staff_promotions') }}" class="staff-form"><input type="hidden" name="_token" value="{{ csrf }}"><label>SKU<input name="check_sku" value="{{ values.check_sku|default('') }}" required></label><label>Кількість<input name="check_quantity" type="number" value="{{ values.check_quantity|default(1) }}" min="1" max="100" required></label><label>Купон<input name="check_coupon" value="{{ values.check_coupon|default('') }}"></label><button class="button" name="operation" value="check">Перевірити розрахунок</button></form>
+{% if preview %}<section class="notice"><h2>Разом: {{ (preview.total/100)|number_format(2,',',' ') }} ₴</h2><p>До знижок: {{ (preview.subtotal/100)|number_format(2,',',' ') }} ₴. Знижка: {{ (preview.discount/100)|number_format(2,',',' ') }} ₴.</p>{% for rule in preview.applied_rules %}<p>Застосовано: {{ rule.name }} — {{ (rule.discount/100)|number_format(2,',',' ') }} ₴</p>{% endfor %}{% for rule in preview.skipped_rules %}<p>Пропущено: {{ rule.name }} — {{ rule.reason }}</p>{% endfor %}</section>{% endif %}
+{% endblock %}
