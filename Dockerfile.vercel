@@ -1,0 +1,23 @@
+FROM dunglas/frankenphp:1-php8.3 AS build
+WORKDIR /app
+ENV COMPOSER_ALLOW_SUPERUSER=1 APP_ENV=vercel APP_DEBUG=0
+RUN install-php-extensions @composer apcu intl opcache pdo_pgsql redis zip
+COPY composer.json composer.lock symfony.lock ./
+RUN composer install --no-dev --no-scripts --no-autoloader --no-interaction --prefer-dist
+COPY . .
+RUN composer dump-autoload --no-dev --classmap-authoritative --no-scripts \
+    && DATABASE_URL='postgresql://app:build@localhost/lavka?serverVersion=16.0.0' php bin/console assets:install public --env=vercel --no-debug \
+    && rm -rf /app/var/cache
+
+FROM dunglas/frankenphp:1-php8.3
+WORKDIR /app
+ENV APP_ENV=vercel APP_DEBUG=0 PORT=8080
+RUN install-php-extensions apcu intl opcache pdo_pgsql redis zip \
+    && cp "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+COPY --from=build --chown=www-data:www-data /app /app
+COPY docker/php/Caddyfile.vercel /etc/frankenphp/Caddyfile
+COPY docker/php/production.ini /usr/local/etc/php/conf.d/production.ini
+RUN mkdir -p /app/var /data/caddy /config/caddy \
+    && chown -R www-data:www-data /app/var /data /config
+USER www-data
+HEALTHCHECK --interval=30s --timeout=5s --start-period=60s --retries=3 CMD curl -fsS "http://localhost:${PORT:-8080}/health" || exit 1

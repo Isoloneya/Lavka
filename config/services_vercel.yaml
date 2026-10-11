@@ -1,0 +1,9 @@
+services:
+    Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler:
+        factory: ['@App\Shared\Infrastructure\Hosting\SessionHandlerFactory', 'create']
+
+    App\Shared\Infrastructure\Http\HealthController:
+        autowire: true
+        autoconfigure: true
+        arguments:
+            $redisUrl: ''

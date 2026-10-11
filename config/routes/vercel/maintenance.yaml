@@ -1,0 +1,4 @@
+vercel_maintenance:
+    path: /internal/maintenance
+    controller: App\Shared\Infrastructure\Hosting\MaintenanceController
+    methods: [GET]

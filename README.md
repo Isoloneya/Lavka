@@ -265,6 +265,18 @@ curl -X POST http://localhost:8080/api/v1/checkout \
 
 ## Розгортання
 
+### Безкоштовне портфоліо-демо: Vercel Hobby + Neon Free
+
+`Dockerfile.vercel` запускає Symfony та Twig у режимі `APP_ENV=vercel`. Vercel Container Runtime доступний у beta на всіх планах. Обирайте Hobby та Neon Free без платних доповнень чи Pro trial; вичерпання безкоштовних квот може зробити демо тимчасово недоступним. Публічний запуск потребує окремої перевірки.
+
+У цьому режимі PostgreSQL зберігає сесії, кеш обмежень запитів і блокування. Окремі Redis та worker не потрібні. Під час звернень до застосунку прострочені резерви очищаються не частіше разу на хвилину, до 100 замовлень за запуск. Щоденний Vercel Cron о 03:00 UTC викликає захищений `/internal/maintenance`. Без відвідувачів резерви можуть зберігатися до наступного запуску; оплатити прострочене замовлення не можна.
+
+У Vercel задайте `APP_ENV=vercel`, `APP_DEBUG=0`, `PORT=8080`, випадкові `APP_SECRET` і `CRON_SECRET` (щонайменше 32 символи), `DATABASE_URL` із Neon з `sslmode=require` та фактичною `serverVersion`, `DEFAULT_URI` з HTTPS-адресою демо, `JWT_SECRET_KEY`, `JWT_PUBLIC_KEY`, `JWT_PASSPHRASE`. Для JWT передайте вміст PEM-ключів як секретні змінні середовища. Ключі мають залишатися однаковими між розгортаннями. `CORS_ALLOW_ORIGIN` задайте для адреси демо, якщо використовуєте API з браузера.
+
+Перед першим запуском застосуйте міграції, виконайте `app:seed-fashion --no-debug` і `app:create-staff` проти окремої бази або гілки Neon для Lavka. Виконуйте ці команди локально в Docker з `--env=vercel` і секретами з ігнорованого `.env.vercel.local`; не запускайте міграції чи наповнення під час HTTP-запитів або автоматично для кожного preview. Для preview використовуйте окрему базу. Після міграцій імпортуйте репозиторій у Vercel: кореневий `Dockerfile.vercel` визначається автоматично.
+
+### Docker Compose
+
 Для тестового production використовуйте `compose.prod.yaml`: образ без dev-залежностей, користувач `www-data`, `APP_DEBUG=0`, Caddy з автоматичним HTTPS та окремий worker. PostgreSQL і Redis не публікуються назовні.
 
 У `.env.prod.local` задайте `SERVER_NAME`, `APP_SECRET`, `POSTGRES_PASSWORD`, `DATABASE_URL`, `JWT_PASSPHRASE`, `JWT_PRIVATE_FILE`, `JWT_PUBLIC_FILE` та `CORS_ALLOW_ORIGIN`. Пароль у `DATABASE_URL` має збігатися з `POSTGRES_PASSWORD`; URL повинен містити `serverVersion=16.0.0`. Шляхи JWT вказують на пару ключів поза образом; приватний ключ має читатися UID 33 контейнера. Домен має вказувати на сервер із відкритими портами 80 і 443.
