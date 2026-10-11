@@ -5,13 +5,12 @@ declare(strict_types=1);
 namespace App\Shared\Infrastructure\Http;
 
 use Doctrine\DBAL\Connection;
-use Symfony\Component\DependencyInjection\Attribute\Autowire;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Attribute\Route;
 
 final readonly class HealthController
 {
-    public function __construct(private Connection $connection, #[Autowire(env: 'REDIS_URL')] private string $redisUrl)
+    public function __construct(private Connection $connection, private string $redisUrl)
     {
     }
 
@@ -19,12 +18,15 @@ final readonly class HealthController
     public function __invoke(): JsonResponse
     {
         $database = false;
-        $cache = false;
+        $cache = '' === $this->redisUrl ? null : false;
         try {
             $database = 1 === (int) $this->connection->fetchOne('SELECT 1');
         } catch (\Throwable) {
         }
         try {
+            if (null === $cache) {
+                return new JsonResponse(['status' => $database ? 'ok' : 'degraded', 'database' => $database, 'redis' => null], $database ? 200 : 503);
+            }
             $redis = new \Redis();
             $host = parse_url($this->redisUrl, PHP_URL_HOST);
             $port = parse_url($this->redisUrl, PHP_URL_PORT) ?? 6379;

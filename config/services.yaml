@@ -10,6 +10,10 @@ services:
     App\:
         resource: '../src/'
 
+    App\Shared\Infrastructure\Http\HealthController:
+        arguments:
+            $redisUrl: '%env(REDIS_URL)%'
+
     App\Inventory\Domain\StockRepository:
         alias: App\Inventory\Infrastructure\Doctrine\DoctrineStockRepository
     App\Shared\Domain\RecordStore:

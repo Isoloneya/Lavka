@@ -1,0 +1,38 @@
+framework:
+    trusted_proxies: 'REMOTE_ADDR'
+    trusted_headers: ['x-forwarded-for', 'x-forwarded-proto', 'x-forwarded-port']
+    http_method_override: false
+    handle_all_throwables: true
+    php_errors:
+        log: true
+    session:
+        handler_id: Symfony\Component\HttpFoundation\Session\Storage\Handler\PdoSessionHandler
+        cookie_secure: auto
+        cookie_httponly: true
+        cookie_samesite: lax
+        gc_probability: 0
+    cache:
+        app: cache.adapter.doctrine_dbal
+        default_doctrine_dbal_provider: doctrine.dbal.default_connection
+        pools:
+            cache.rate_limiter:
+                adapter: cache.adapter.doctrine_dbal
+    lock: doctrine.dbal.default_connection
+    messenger:
+        failure_transport: null
+        transports:
+            async:
+                dsn: 'sync://'
+                options: []
+            failed:
+                dsn: 'in-memory://'
+    router:
+        default_uri: '%env(DEFAULT_URI)%'
+
+monolog:
+    handlers:
+        main:
+            type: stream
+            path: php://stderr
+            level: warning
+            formatter: monolog.formatter.json
